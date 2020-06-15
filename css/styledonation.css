@@ -1,0 +1,350 @@
+
+body{
+	margin:0;
+	background:url(../images/bg-body1.jpg);
+      font-family: "Microsoft JhengHei" ;
+}
+/*------------------------- Header ------------------------*/
+.header{
+	background:url(../images/bg-header.gif) repeat-x center bottom;
+	padding: 0 0 2px;
+}
+.header div{
+	width:940px;
+	padding:0 10px;
+	margin:0 auto;
+}
+.header div a#logo{
+	text-align:center;
+	display:block;
+	width:480px;
+	height:118px;
+	/*margin:98px auto 40px;*/
+    margin:0px auto 20px;
+    padding: 5px;
+}
+.header div a#logo img{
+	border:0;
+}
+.header div ul{
+	list-style:none;
+	margin:0;
+	padding:0 12px;
+	overflow:hidden;
+}
+.header div ul li:first-child{
+	margin:0;
+}
+.header div ul li.selected{
+	background:url(../images/bg-menu-selected1.jpg) repeat-x;
+}
+.header div ul li{
+	float:left;
+	margin:0 0 0 0 41px;
+	text-align: center;
+	width:150px;
+	height:59px;
+        
+}
+.header div ul li a:hover{
+	color:#FFA500;
+}
+.header div ul li a{
+	text-decoration:none;
+	color:#fff;
+	
+	font-size: 28px;
+	display: block;
+
+	margin: 15px 0 0;
+	text-transform:uppercase;
+	line-height:36px;
+	outline:none;
+}
+
+.dropdown-content
+{
+    display: none;/*把一個物件完全的隱藏*/
+    position:absolute;/**/
+    background:url(../images/bg-body1.jpg);
+    min-width: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 200px;
+    padding: 2px;
+  }
+
+
+  /*下拉後a的樣式*/
+  .dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  /*下拉後a被hover的樣式*/
+  .dropdown-content a:hover{
+    background: 
+        
+      linear-gradient(90deg,rgba(154 ,205 ,50,.2) 50%,transparent 50%),
+      linear-gradient(rgba(255, 69, 0,.2) 50%,transparent 50%);
+      background-size: 20px 20px;
+      color:#FFA500;
+      font-weight:bold;
+     
+  }
+.dropdown:hover .dropdown-content{
+    display: block;
+  }
+        
+.dropdown-content
+{
+    display: none;/*把一個物件完全的隱藏*/
+    position:absolute;/**/
+    background:url(../images/bg-body1.jpg);
+    min-width: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 200px;
+    padding: 2px;
+  }
+
+
+  /*下拉後a的樣式*/
+  .dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  /*下拉後a被hover的樣式*/
+  .dropdown-content a:hover{
+    background: 
+        
+     /* linear-gradient(90deg,rgba(154 ,205 ,50,.2) 50%,transparent 50%),*/
+      linear-gradient(rgba(124, 205, 124,.2) 50%,transparent 50%);
+      background-size: 20px 20px;
+      color:#FFA500;
+      font-weight:bold;
+     
+  }
+.dropdown:hover .dropdown-content{
+    display: inline-block;
+  }
+/*------------------------- Content ------------------------*/
+.content{
+	background:url(../images/bg-content.jpg);
+   height:1020px;
+}
+.content div{
+
+
+    height: ;
+
+   
+ /*height: 1000px;*/
+ 
+
+	
+    
+}
+.donationphoto{
+
+    margin-left: 270px;
+     
+}
+/*.donationsay {
+    border-style:solid;
+    width:700px;
+    height: 400px;
+    border-color: white;
+  
+}*/
+.donationsay{
+    border-style:solid;
+    margin: 0px 270px 30px;
+    padding:0px 40px 40px;
+    width:625px;
+    height: 340px;
+    border-color: white;
+    background-color: bisque;
+    
+  
+}
+.word{
+    font-size: 17px;
+}
+.option{
+    padding-left: 350
+}
+.title
+{
+    width: 1040px;
+    height: 20px;
+    padding-left: 320px;
+}
+.button{
+    border-style:solid;
+    width:120px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border-color: white;
+    background-color:rgba(60,255,4,0.2);
+    margin-left: 40px;
+    color: white;
+    margin-left: 100px;
+    padding: 14px;
+}
+.button:hover{
+        border-style: solid;
+    width:120px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border-color: white;
+    background-color: goldenrod;
+    font-family: ;
+    margin-top: 75px;
+    color:white;
+}
+.button2{
+    border-style:solid;
+    width:120px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+    border-color: white;
+    background-color:rgba(60,255,4,0.2);
+    font-family: ;
+    margin-left: 680px;
+    margin-top: 0px;
+    color: white;
+}
+
+
+/*------------------------- Footer ------------------------*/
+.footer{
+	background:url(../images/bg-footer.gif) repeat-x center top;
+	padding:2px 0 0;
+}
+/*.footer div{
+	width:940px;
+	padding:30px 10px 65px;
+	margin:0 auto;
+	overflow: hidden;
+}
+.footer div div:first-child{
+	margin: 0;
+	text-align: justify;
+	width: 665px;
+	padding: 0;
+	height:auto;
+	background:none;
+	border: 0;
+}
+.footer div div:first-child p{
+	
+	font-size: 14px;
+	font-weight: normal;
+	color:#fff;
+	line-height: 30px;
+	margin: 7px 0 30px;
+	text-align: justify;
+	text-transform: none;
+	padding: 0;
+	width: auto;
+}
+.footer div div:first-child p.lastchild{
+	margin-bottom: 8px;
+}
+.footer div div:first-child p a{
+	outline:none;
+	color: inherit;
+	text-decoration: underline;
+}
+.footer div div:first-child p a:hover{
+	text-decoration: underline;
+	color: #fd6800;
+}
+.footer div div span:first-child{
+	margin: 12px 0 0;
+}
+.footer div div span{
+	
+	font-size:18px;
+	text-transform:uppercase;
+	color: #fff;
+	text-align:center;
+	margin: 10px 0 0;
+	display: block;
+}
+.footer div div{
+	float:left;
+	width:220px;
+	margin:59px 0 10px 42px;
+	background:url(../images/bg-aside.jpg) no-repeat;
+	padding: 0;
+	height:300px;
+	text-align:center;
+	border-width:1px;
+	border-style: none none solid none;
+	border-color: #d39e7f;
+}
+.footer div div form{
+	width:180px;
+	height:30px;
+	margin:6px auto;
+}
+.footer div div form input:first-child{
+	background:url(../images/interface.png) no-repeat 0 -50px;
+	width: 140px;
+	padding:7px 5px;
+	height:auto;
+}
+.footer div div form input{
+	float:left;
+	background:url(../images/interface.png) no-repeat;
+	border: 0;
+	padding:0;
+	height:30px;
+	width: 30px;
+}
+.footer div div a{
+	outline:none;
+}
+.footer div div a img{
+	border: 0;
+}
+.footer div div h3{
+	
+	font-size: 14px;
+	font-weight: bold;
+	color:#fff;
+	margin: 10px 0 0
+}
+.footer div div p{
+	
+	font-size:18px;
+	text-transform:uppercase;
+	color: #fff;
+	line-height: 30px;
+	display: block;
+	padding: 0;
+	margin: 11px 0 10px;
+	text-align:center;
+}
+
+.footer div p{
+	
+	font-size:13px;
+	color:#fff;
+	padding: 0 13px 0 0;
+	text-align: right;
+	margin: 17px 0 0;
+	clear:both;
+}
+*/

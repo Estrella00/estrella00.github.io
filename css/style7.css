@@ -1,0 +1,77 @@
+/* Website template by freewebsitetemplates.com */
+/*------------------------- Layout styles ------------------------*/
+body
+{
+	margin:0 ;;
+	background:url(../images/bg-body1.jpg);
+    width: 800px;
+    height: auto;
+      font-family: "Microsoft JhengHei" ;
+    
+}
+#l
+{
+    margin: 10px;
+}
+div.pic
+{
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    position: absolute;
+    top: 30px;
+    left:180px;
+}
+div.introduce
+{
+    width: 560px;
+    height: auto;
+    background-color: white;
+    text-align:left;
+    position: absolute;
+    top: 60px;
+    left: 510px;
+    border-radius: 40px;
+}
+div.area
+{
+    width: 300px;
+    background-color: darkgrey;
+    float: right;
+    position: absolute;
+    top: 380px;
+    left: 190px;
+    border-radius: 50px;
+}
+h2
+{
+    text-align: center;
+}
+p
+{
+    font-size: 20px;
+    padding: 8px;
+    text-align: center;
+}
+input
+{
+    background-color:yellowgreen;
+    margin: 10px;
+    width:100px;
+    height:40px;
+    font-size:20px;
+    text-align: center;
+    position: absolute;
+    top: 1100px;
+     left: 550px;
+    border-radius: 10px;
+    
+}
+iframe
+{
+    border: 2px solid #efefef;
+    position:absolute;
+    top: 780px;
+    left: 510px;
+}
+
