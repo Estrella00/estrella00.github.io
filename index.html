@@ -1,100 +1,456 @@
+<!DOCTYPE html>
 <html>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+	.header
+{
+	display: flex;
+}
+nav
+{
+	width: 100%;
+	height: 100px;
+}
+
+.title 
+{
+	padding: 0 20px; 
+ text-align: center; 
+} 
+
+
+.title  li
+{
+	list-style: none;
+	display: inline-block;
+	
+	line-height: 50px;
+}
+
+.title li a
+{
+	text-decoration:none;
+	color:#838383;
+	font-size: 12px;
+	outline:none;
+	padding: 0 20px;
+}
+
+.title  li a:hover
+{
+	color:black;
+}
+
+
+.container 
+{
+  position: relative;
+  text-align: center;
+  
+ 
+}
+.centered {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered3 {
+	position: absolute;
+  top:  65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+button 
+{
+
+  color: white; 
+  width:120px;
+  height:40px;
+  border:none;
+  background-color:rgb(0,0,0);"
+}
+button:hover
+{
+	cursor:pointer;
+	background-color: rgb(37, 37, 37);
+	
+}
+
+.intro p
+{
+	font-size: 12px;
+	color: rgb(80, 79, 79);
+	text-align: center;
+	margin-top: 20px;
+	line-height: 24px;          
+    
+}
+
+.intro2 p
+{
+	font-size: 16px;
+	color: rgb(34, 33, 33);
+	text-align: center;
+	
+}
+
+.intro3 p
+{
+	font-size: 12px;
+	color: rgb(80, 79, 79);
+	text-align: center;
+	margin-top: 100px;
+	line-height: 24px;          
+    
+}
+.intro4 p
+{
+	font-size: 12px;
+	color: rgb(80, 79, 79);
+	text-align: center;
+	
+	line-height: 24px;          
+    
+
+}
+
+.cha1
+{
+	display:flex;
+	flex-direction: row;
+	
+}
+	
+.cha2
+{
+	display:flex;
+	flex-direction: row;
+	
+}	
+
+.cha3
+{
+	display:flex;
+	flex-direction: row;
+	
+}	
+.step_con
+{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.join
+{
+	
+	background-color: rgb(241, 239, 236);
+	width: 1200px;
+	height: 475px;
+  margin: 100px auto 50px auto ;
+	
+}
+.join_con
+{
+	display:flex;
+	flex-direction: column;
+	
+	align-items: center;
+}
+.list ul li
+{
+	list-style:disc;
+	display:flex;
+	flex-direction: column;
+}
+.list li
+{
+	margin-top: 20px;
+	line-height: 30px;
+	font-size: 16px;
+}
+.faq
+{
+	margin-left: 50px;
+}
+
+.sponsor
+{
+	
+	background-color: rgb(241, 239, 236);
+	width: 1200px;
+	height: 475px;
+  margin: 100px auto 50px auto ;
+	
+}
+.sponsor_con
+{
+	display:flex;
+	flex-direction: column;
+	
+	align-items: center;
+}
+
+.cha4
+{
+	display:flex;
+	flex-direction: row;
+	
+}	
+
+</style>
+
+
 <head>
-	<meta charset="UTF-8">
-	<title>首頁</title>
-	<link rel="stylesheet" href="css/style1.css"   type="text/css">
-    
-    
+	<meta charset="utf-8">
+	<title>劇情向 line bot 推理遊戲 | 實習判官</title>
+<meta content="冥界是所有亡魂都會來的世界，亡魂在這裡經過審判跟清理生前的債務之後，就會重
+新投胎或前往其他世界。聖人有機會進入極x樂世界，大惡人會下地獄，小善小惡的一般人則會把生前記
+憶跟遺憾解決之後，就重新投胎。" name="description">
+
+<meta content="實習判官 - 劇情向 LINEBOT 推理遊戲" property="og:title">
+<meta content="冥界是所有亡魂都會來的世界，亡魂在這裡經過審判跟清理生前的債務之後，就會重新投胎或前往其他世界。聖人有機會進入極x樂世界，大惡
+人會下地獄，小善小惡的一般人則會把生前記憶跟遺憾解決之後，就重新投胎。" property="og:description">
+
 </head>
+
 <body>
-    
-    
-    
+
 	<div class="header">
-		<div>
-			<a href="index.html" id="logo"><img src="images/cow_W.png" alt="logo" width="250"></a>
-			<ul>
-				<li><a href="news.html">新聞</a></li>
-				<li><a href="about.html">關於</a></li>
-				<li class="dropdown">
-                    <a  class="dropbtn" href="other.html">其他</a>
-                    <div class="dropdown-content" style="width: 200px;">
-                        <a href="other.html">小遊戲</a>
-          <a href="wallpaper.html">桌布</a>
-          <a href="product.html">產品
-            </a>
-        <a href="Q&A.html">QA</a>
-        </div>
-                </li>
-				<li ><a href="menu.html">動物名錄</a></li>
-					<li><a href="contact.html">聯絡</a></li>
-                <li><a href="donate.html">捐款</a></li>
-			</ul>
-		</div>
-	</div>
-	<div class="content">
+		<a href="index.html"><img src="image/實習判官logo.png" style="margin-left: 60px; margin-top: 10px;" width="108" sizes="108px"></a>
+
+		<!-- <div class="container"> -->
 		
-         <div class="slider_container">
-	<div>
-		<img src="images/taiwan.jpg" alt="pure css3 slider" />
-		<span class="info">Image Description</span>
+		<nav>
+		<ul class="title">
+			<li><a href="article.html">看劇本</a></li>
+			<li><a href="#">判官介紹</a></li>
+			<li><a href="#">遊戲流程</a></li>
+			<li><a href="#">開始推理</a></li>
+			<li><a href="#">FAQ</a></li>
+			<li><a href="#">贊助我們</a></li>
+			<li><a href="#">FB 社團</a></li>
+			<li><a href="#">聯絡我們</a></li>
+		</ul>
+		</nav>
+	   
+		<!-- </div> -->
+				
 	</div>
-	<div>
-		<img src="images/taiwan2.jpg" alt="pure css3 slider" />
-		<span class="info"></span>
+
+	<div class="container">
+
+		<img  src="image/10.jpg" width="1250px" >
+		<div class="centered" style=" width: 550px; height: 80px; background-color: rgb(0,0,0,0.5); color: white; font-size: 40px; " >
+			<p style=" top: -20px; text-align: center; position: relative;">實習判官</p>
+		</div>
+
+		<div class="centered2" style="opacity:0.6; color: #fff; font-size: 20px;">劇情 line bot 推理遊戲<br></div>
+	
+			<div class="centered3"><a href="https://line.me/ti/p/@183sknuo">
+			 <button>開始推理</button></a>
+			</div>
+	
 	</div>
-	<div>
-		<img src="images/taiwan3.jpg" alt="pure css3 slider" />
-		<span class="info"></span>
+
+	<div class="intro">
+		<p>冥界是所有亡魂都會來的世界，亡魂在這裡經過審判跟清理生前的債務之後，就會重新投胎或前往其他世界。
+			好人有機會進入極樂世界，壞人會下地獄，小善小惡的一般人則會把生前記憶跟遺憾解決</br>之後，就重新投胎。</p>
+		
+			
+	</div>	
+
+	<div class="intro2">
+
+		<p style="margin-top: 50px; font-size: 37px; color: #000;">四大特色</p>
+			
+	        <p>不用下載任何 App，創建 Line 群組即可開始推理 🎮</p>
+			<p>多人協力推理，難解的懸案不再一個人面對 🔍</p>
+			<p>MIT 台灣自製劇本，各種意想不到的情節讓你腦洞大開 🤯</p>
+			<p>獨創冥界世界觀，三位判官的故事等你來發掘 💫</p>
 	</div>
-	<div>
-		<img src="images/taiwan4.jpg" alt="pure css3 slider" />
-		<span class="info"></span>
+</br></br>
+<hr style="border-top: 0.5px solid #bbb;">
+
+<!-- 第二區-->
+</br></br></br>
+
+<div class="cha1">
+	
+		<div class="word" style="margin-left: 50px;">
+			<div class="label" style="font-size: 12px; text-align: center; margin-top: 70px;">擅於觀察人際互動</div>
+			<h2 class="label2" style="font-size: 36px;text-align: left;">聽風判官 冥鏡</h2>
+			<p class="label3" style="color: rgb(66, 66, 66); line-height: 26px;  ">「這種簡單的小情報，花兩分鐘就調查出來了，剩</br>下的就交給你囉。」</p>
+		</br>
+			<a href="https://line.me/ti/p/@183sknuo" >
+				<button style="margin-right: 10px;">協助他破案</button></a>
+		
+			<a href="mingjing.html" ><button>判官介紹</button></a>
+		</div>
+
+		<div class="pic" style="margin-left: 60px; ">
+			<img src="image/冥鏡.png">	
+		</div>
+</div>
+
+
+<div class="cha2" style="margin-top: 80px; " >
+	
+	
+	<div class="pic" style="margin-right: 120px;">
+		<img src="image/魅嵐.png">	
 	</div>
-	<div>
-		<img src="images/taiwan5.jpg" alt="pure css3 slider" />
-		<span class="info"></span>
+
+	<div class="word" style="margin-left: 50px; ">
+		<div class="label" style="font-size: 12px; text-align: center;margin-top: 70px;">仔細觀察生活中大小事</div>
+		<h2 class="label2" style="font-size: 36px;text-align: left;">察微判官 魅嵐</h2>
+		<p class="label3" style="color: rgb(66, 66, 66); line-height: 26px;  ">「我喜歡把證物按照字首筆劃排序，你說我很奇</br>怪？你們這些不重視秩序的人才怪吧。」</p>
+	</br>
+		<a href="https://line.me/ti/p/@183sknuo" >
+			<button style="margin-right: 10px;">協助她破案</button></a>
+	
+		<a href="meilan.html" ><button>判官介紹</button></a>
 	</div>
 </div>
-        
-        <div id="report">
-        
-        <a href="http://www.tanews.org.tw/info/14913">
-            <img src="images/news-photo.jpg" width="430px"></a>
-        
-            <a  style="color: white;" href="http://www.tanews.org.tw/info/14913">
-                <p>台灣特有種長鬃山羊阿里山鄉保育有成 運氣好可看到</p></a>
-        </div>
-     
-        <div id="video">
-            
-            <iframe width="450" height="360" src="https://www.youtube.com/embed/nrLQJG1Snow" 
-            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        
-       
-            
-        </div>
-        
-        
-        <div id="social">
-        
-            <a href="https://www.facebook.com/%E7%89%9B%E9%80%BC%E8%82%A5%E5%AE%85%E5%B7%A5%E4%BD%9C%E5%AE%A4-202936310364969/?modal=admin_todo_tour"><img src="images/fb.png" width="270px" style="margin-right: 50px;">
-            </a>
-            
-              <a href="https://www.youtube.com/channel/UCN5fqIB_sjmpgBKC_RweoNg"> <img src="images/ig.png"  width="270px"  style="margin-right: 50px;" ></a>
-            
-            <a href="https://www.youtube.com/channel/UCN5fqIB_sjmpgBKC_RweoNg"> <img src="images/yt.png"  width="270px"></a>
-            
-        </div>
-        
-        
-        
+
+
+<div class="cha3" style="margin-top: 80px;">
+	
+	<div class="word" style="margin-left: 50px;">
+		<div class="label" style="font-size: 12px; text-align: center; margin-top: 70px;">經常對靈魂自言自語</div>
+		<h2 class="label2" style="font-size: 36px;text-align: left;">讀夢判官 靈陽</h2>
+		<p class="label3" style="color: rgb(66, 66, 66); line-height: 26px;  ">「石獅寺有四十四隻石獅子，四十四隻石獅子吃四</br>十四枝芋仔冰芋仔冰好好吃我也好想吃喔端湯上塔？」</p>
+	</br>
+		<a href="https://line.me/ti/p/@183sknuo" >
+			<button style="margin-right: 10px;">協助他破案</button></a>
+	
+		<a href="#" ><button>判官介紹</button></a>
 	</div>
-        
-	<div class="footer">
-		<div>
-			<p>copyright &#169; cowcow | all rights reserved.</p>
+
+	<div class="pic" style="margin-left: 120px; ">
+		<img src="image/靈陽.png">	
+	</div>
+</div>
+
+
+<div class="intro3" ><p>20世紀人口膨脹，冥界也陷入鬼口膨脹的危機，裝不下那麼多鬼魂的冥界現在只追求效率，
+	把亡魂快速投胎送回陽間。這導致原本有強力審判功能的十殿閻羅，變成了戶政事務所或
+	移民署一般的行政</br>機關。現在的閻王們只負責快速審理亡魂是否適合投胎，不再處理它們的生前事務。</p>
+</div>
+</br>
+<hr style="border-top: 0.5px solid #bbb;">
+
+<!-- 第三區-->
+
+<div class="step">
+	<h2 style="font-size: 36px; margin-top: 80px; text-align: center;">三個步驟開始推理</h2>
+	
+	<div class="step_con">
+
+		<div class="step1" >
+			<p style="font-size: 12px; text-align: center; color: gray;">步驟一</p>
+			<h4 style="font-size: 24px;">挑選案件</h4>
+			<img src="image/step1.jpg" width="350px">
+			<p style="font-size: 16px;">首先創建 line 群組，邀請實習判官官方帳號加入</br>之後，邀請其他朋友加入後挑選案件</p>
+
 		</div>
+
+		<div class="step2" >
+			<p style="font-size: 12px;text-align: center;color: gray;">步驟二</p>
+			<h4 style="font-size: 24px;">案件推理</h4>
+			<img src="image/step2.jpg" width="350px">
+			<p style="font-size: 16px;">發揮判官的超能力以獲取線索，注意關係人與證物</br>間可能的連結，一步一步抽絲剝繭揭開案件全貌</p>
+
+		</div>
+
+		<div class="step3">
+			<p style="font-size: 12px;text-align: center;color: gray;">步驟三</p>
+			<h4 style="font-size: 24px;">回答問題</h4>
+			<img src="image/step3.jpg" width="350px">
+			<p style="font-size: 16px;">告訴小閻王你們認為的真相，重啟案件還被害者</br>一個公道</p>
+		</div>
+
 	</div>
+
+</div>
+
+<!-- 第四區-->
+</br>
+<div class="join" >
+	<div class="join_con">
+	<p style="font-size: 36px;">現在加入</p>
+	<img src="image/qr.png" width="220px"></br></br>
+	<a href="https://line.me/ti/p/@183sknuo"><button>開始推理</button></a>
+	</div>
+</div>
+<div class="intro4">
+	<p>
+	不少亡魂帶著遺憾來到冥界，結果完全沒有得到任何清理就要投胎回陽間了，它們的遺憾會製造大量負能量。亡魂身上的負能量會造成兩種負面效應：一是讓冥界充滿負能量，結果冥界變熱；二是帶著遺憾跟怨恨
+	的亡魂沒有想通就投胎，會把這些傷痕帶到下一世人生，造成陽間更多問題。充滿負能量的亡魂投胎也要消耗比較多的孟婆湯，害孟婆抱怨連連。</p></div>
+
+	</br>
+	<hr style="border-top: 0.5px solid #bbb;">
+
+<!-- 第五區-->
+</br>
+
+<div class="faq">
+
+	<p style=" text-align: center; font-size: 40px;">ＦＡＱ</p>
+
+	<ul class="list" style="list-style-type:disc">
+		<li>Q: 實習判官是什麼？<br>A: 實習判官是一個基於 LINE 應用程式的劇情向 LINEBOT&nbsp;推理遊戲。</li>
+		<li>Q: 實習判官適合幾個人一起玩？<br>A: 最佳體驗人數為 3 至 6 人。</li>
+		<li>Q: 邊緣人可以自己一個玩嗎？<br>A: 可以喔，你只需要創立群組並邀請實習判官加入就可以開始破案。</li>
+		<li>Q: 實習判官要全部人在一個空間才能玩嗎？<br>A: 如果沒辦法集合所有人也沒關係，建議可以發起 Line 群組電話討論劇情。</li>
+		<li>Q: 實習判官的遊戲目的？<br>A: 玩家將在遊戲中擔任三位判官的小助手，找到關鍵線索、推理討論最後偵破案件。</li>
+		<li>Q: 實習判官遊戲該如何進行？<br>A: 請先仔細閱讀小閻王的訊息，觀看阿鬼的跑馬燈，接著向三位判官尋求線索。</li>
+		<li>Q: 推理到一半卡關了怎麼辦？<br>A: 請去找石獅，那邊有豐富的提示。</li>
+		<li>Q: 任務明明解完了，也顯示案件破解，可是卻無法玩新案件？<br>A: 請至功能選單 -&gt; 卷宗藏經閣 -&gt;&nbsp;更換劇本。</li>
+		<li>Q: 實習判官會持續推出新劇本嗎？<br>A: 我們會不定期推出精彩的劇本，盡請期待！</li>
+		<li>Q: 實習判官適合什麼樣的人玩？<br>A: 對推理有興趣，喜歡跟朋友一起合作的人，上班上課族空檔想要小小放鬆或是單純想要打發時間的人都可以玩。</li>
+		<li>Q: 我把實習判官加入群組，一段時間了都沒反應是為什麼？<br>A: 請幫我檢查群組是否已經有其他官方帳號，目前一個 群組只能有一個官方帳號，請先幫我把舊帳號暫時移出群組，並再邀請一次實習判官。</li>
+		<li>Q: 我想要贊助實習判官該怎麼做？<br>A: 下面有贊助我們的連結，歡迎贊助，讓我們做的更好。</li>
+	</ul>
+</div>
+
+<!-- 第六區-->
+
+<div class="sponsor">
+	<div class="sponsor_con">
+	<p style="font-size: 36px;">贊助我們</p>
+	<img src="image/spon_qr.png" width="220px"></br></br>
+	<a href="https://payment.ecpay.com.tw/QuickCollect/PayData?OB39U6tsvySA4R4lL0NnQYg%2fgxwW1z0MVGChU3Oe%2fXM%3d"><button>讓我們做得更好</button></a>
+	</div>
+</div>
+
+<div class="cha4" style="margin-top: 80px; " >
+	
+	
+	<div class="pic" style="margin-left: 70px;">
+		<img src="image/小閻王.png">	
+	</div>
+
+	<div class="word" style="margin-left: 50px; ">
+		<p>想了解更多實習判官的內容？<br>想第一手收到實習判官的最新資訊？<br>現在加入我們的 FB 社團！</p>
+		<a style="cursor: pointer;" href="https://www.facebook.com/groups/869608936785909" target="_blank"><img src="image/share.png" width="300px"></a>
+		<img src="image/實習判官logo.png" width="250px">
+	</br>
+	</div>
+</div>
+
+<div style="line-height: 25px; font-size: 12px; text-align: center; margin:40px auto 150px auto;"><strong>合作請來信</strong><br>JUDICIALINTERN0419@gmail.com<br></div>
+
 </body>
 </html>
+
+
