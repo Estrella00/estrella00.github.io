@@ -1,8 +1,56 @@
 <!DOCTYPE html>
 <html>
+	<link rel="stylesheet" href="css/style.css"   type="text/css">
+	<link rel="stylesheet" href="css/style_rwd_768.css"   type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script>
+
+		function myFunction() 
+		{
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") 
+			{
+				x.className += " responsive";
+			} 
+			else 
+			{
+				x.className = "topnav";
+			}
+		}
+
+		$(document).ready(function()
+		{
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) 
+		  {
+		
+			// Make sure this.hash has a value before overriding default behavior
+			if (this.hash !== "") 
+			{
+			  // Prevent default anchor click behavior
+			  event.preventDefault();
+		
+			  // Store hash
+			  var hash = this.hash;
+		
+			  // Using jQuery's animate() method to add smooth page scroll
+			  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			  $('html, body').animate(
+				  {
+				scrollTop: $(hash).offset().top
+			  }, 800, function()
+			  {
+		   
+				// Add hash (#) to URL when done scrolling (default click behavior)
+				window.location.hash = hash;
+			  });
+			} // End if
+		  });
+		});
+		</script>
 <style>
-	.header
+	/* .header
 {
 	display: flex;
 }
@@ -10,9 +58,9 @@ nav
 {
 	width: 100%;
 	height: 100px;
-}
+} */
 
-.title 
+/* .title 
 {
 	padding: 0 20px; 
  text-align: center; 
@@ -39,7 +87,7 @@ nav
 .title  li a:hover
 {
 	color:black;
-}
+} */
 
 
 .container 
@@ -77,7 +125,17 @@ button
   width:120px;
   height:40px;
   border:none;
-  background-color:rgb(0,0,0);"
+  background-color:rgb(0,0,0);
+}
+
+.btn_start
+{
+
+	color: white; 
+	width:120px;
+	height:40px;
+	border:none;
+	background-color:rgb(0,0,0);
 }
 button:hover
 {
@@ -110,7 +168,9 @@ button:hover
 	color: rgb(80, 79, 79);
 	text-align: center;
 	margin-top: 100px;
-	line-height: 24px;          
+	margin-left: 170px;
+	line-height: 24px;  
+	width: 900px;        
     
 }
 .intro4 p
@@ -130,7 +190,35 @@ button:hover
 	flex-direction: row;
 	
 }
+.cha1 .word
+{
+	margin-left: 50px; 
+	width: 350px; 
+}
+
+
+.cha1 .label
+{
+	font-size: 12px; 
+	text-align: center; 
+	margin-top: 70px;
+}
+.cha1 .label2
+{
+	font-size: 36px;
+	text-align: left; 
+}
+.cha1 .label3
+{
+	color: rgb(66, 66, 66); 
+	line-height: 26px
+}
+
+.cha1 .btn_help
+{
+	margin-right: 15px;
 	
+}
 .cha2
 {
 	display:flex;
@@ -138,24 +226,98 @@ button:hover
 	
 }	
 
+.cha2 .word
+{
+	margin-left: 50px; 
+	width: 350px; 
+}
+
+
+.cha2 .label
+{
+	font-size: 12px; 
+	text-align: center; 
+	margin-top: 70px;
+}
+.cha2 .label2
+{
+	font-size: 36px;
+	text-align: left; 
+}
+.cha2 .label3
+{
+	color: rgb(66, 66, 66); 
+	line-height: 26px
+}
+
+.cha2 .btn_help
+{
+	margin-right: 15px;
+	
+}
+
 .cha3
 {
 	display:flex;
 	flex-direction: row;
 	
 }	
+
+.cha3 .word
+{
+	margin-left: 50px; 
+	width: 350px; 
+}
+
+
+.cha3 .label
+{
+	font-size: 12px; 
+	text-align: center; 
+	margin-top: 70px;
+}
+.cha3 .label2
+{
+	font-size: 36px;
+	text-align: left; 
+}
+.cha3 .label3
+{
+	color: rgb(66, 66, 66); 
+	line-height: 26px
+}
+
+.cha3 .btn_help
+{
+	margin-right: 15px;
+	
+}
+
+
+.step1 .step_num
+{
+	font-size: 12px; text-align: center; 
+	color: gray;
+}
+
+.step1 img
+{
+	max-width: 250px; 
+	height: auto;
+}
+
 .step_con
 {
 	display:flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-evenly;
+	
 }
 .join
 {
 	
 	background-color: rgb(241, 239, 236);
-	width: 1200px;
-	height: 475px;
+	width: 100%; height: auto;
   margin: 100px auto 50px auto ;
 	
 }
@@ -187,8 +349,7 @@ button:hover
 {
 	
 	background-color: rgb(241, 239, 236);
-	width: 1200px;
-	height: 475px;
+	width: 100%; height: auto;
   margin: 100px auto 50px auto ;
 	
 }
@@ -206,6 +367,482 @@ button:hover
 	flex-direction: row;
 	
 }	
+.pic2
+{
+	width: 500px;
+
+}
+.pic3
+{
+	width: 300px;
+
+}
+.pic4
+{
+	width: 300px;
+
+}
+
+.centered
+{
+	 width: 550px; 
+	 height: 80px; 
+	 background-color: rgb(0,0,0,0.5); 
+	 color: white; 
+	 font-size: 40px; 
+}
+
+.centered2
+{
+	opacity:0.6; color: #fff; font-size: 20px;
+}
+
+
+
+@media(max-width:768px)
+{
+	.cha1
+	{
+		display:flex;
+		flex-direction: column-reverse;
+	}
+	.cha1 .word
+	{
+		position: relative;
+		width: 500px;
+		
+		
+	}
+	.cha1 .pic
+	{
+		position: relative;
+		width: 100%;
+		left: -150px;
+	}
+		.cha1 .label
+	{
+		font-size: 12px; 
+		text-align: center; 
+		margin-top: 70px;
+	}
+	.cha1 .label2
+	{
+		font-size: 36px;
+		text-align: center; 
+	}
+	.cha1 .label3
+	{
+		text-align: center; 
+		color: rgb(66, 66, 66); 
+		line-height: 26px
+	}
+	.cha1 a button
+	{
+		margin: 20px;
+	
+	}
+		.cha1 .btn_help
+	{
+		margin-left: 100px;
+		
+	}
+
+
+	.cha2
+	{
+		display:flex;
+		flex-direction: column;
+	}
+	.cha2 .word
+	{
+		position: relative;
+		width: 500px;
+		/* background-color: greenyellow; */
+		/* left: 100px; */
+	}
+	.cha2 .pic
+	{
+		position: relative;
+		width: 100%;
+		/* left: 20px; */
+	}
+		.cha2 .label
+	{
+		font-size: 12px; 
+		text-align: center; 
+		margin-top: 70px;
+	}
+	.cha2 .label2
+	{
+		font-size: 36px;
+		text-align: center; 
+	}
+	.cha2 .label3
+	{
+		text-align: center; 
+		color: rgb(66, 66, 66); 
+		line-height: 26px
+	}
+	.cha2 a button
+	{
+		margin: 20px;
+	
+	}
+		.cha2 .btn_help
+	{
+		margin-left: 100px;
+		
+	}
+
+
+	.cha3
+	{
+		display:flex;
+		flex-direction: column-reverse;
+	}
+	.cha3 .word
+	{
+		position: relative;
+		width: 500px;
+		/* background-color: greenyellow; */
+		/* left: 100px; */
+	}
+	.cha3 .pic
+	{
+		position: relative;
+		width: 100%;
+		left: -50px;
+	}
+		.cha3 .label
+	{
+		font-size: 12px; 
+		text-align: center; 
+		margin-top: 70px;
+	}
+	.cha3 .label2
+	{
+		font-size: 36px;
+		text-align: center; 
+	}
+	.cha3 .label3
+	{
+		text-align: center; 
+		color: rgb(66, 66, 66); 
+		line-height: 26px
+	}
+	.cha3 a button
+	{
+		margin: 20px;
+	
+	}
+		.cha3 .btn_help
+	{
+		margin-left: 100px;
+		
+	}
+
+		.intro3 p
+	{
+		font-size: 12px;
+		color: rgb(80, 79, 79);
+		/* text-align: center; */
+		margin-top: 100px;
+		margin-left: 50px;
+		line-height: 24px;  
+		width: 500px;        
+		
+	}
+
+		.step1
+	{
+		
+		width: 180px;
+	}
+	.step2
+	{
+	
+		width: 180px;
+	}
+	.step3
+	{
+		
+		width: 180px;
+	}
+
+		.step1 img
+	{
+		max-width: 180px; 
+		height: auto;
+	}
+
+	.step2 img
+	{
+		max-width: 180px; 
+		height: auto;
+	}
+
+	.step3 img
+	{
+		max-width: 180px; 
+		height: auto;
+	}
+
+	.pic2
+	{
+		width: 300px;
+
+	}
+
+	.pic3
+	{
+		width: 180px;
+
+	}
+	.pic4
+	{
+		width: 150px;
+
+	}
+
+}
+
+@media(max-width:500px)
+{
+		.centered
+	{
+		width: 200px; 
+		height: 30px; 
+		background-color: rgb(0,0,0,0.5); 
+		color: white; 
+		font-size: 20px; 
+	}
+
+	.centered2
+	{
+		opacity:0.6; color: #fff; font-size: 12px;
+	}
+
+	.btn_start
+	{
+
+		color: white; 
+		width:100px;
+		height:30px;
+		border:none;
+		background-color:rgb(0,0,0);
+	}
+
+	.cha1
+	{
+		display:flex;
+		flex-direction: column-reverse;
+	}
+	.cha1 .word
+	{
+		position: relative;
+		width: 500px;
+		/* background-color: greenyellow; */
+		
+	}
+	.cha1 .pic
+	{
+		position: relative;
+		width: 100%;
+		left: -150px;
+	}
+		.cha1 .label
+	{
+		font-size: 12px; 
+		text-align: center; 
+		margin-top: 70px;
+	}
+	.cha1 .label2
+	{
+		font-size: 36px;
+		text-align: center; 
+	}
+	.cha1 .label3
+	{
+		text-align: center; 
+		color: rgb(66, 66, 66); 
+		line-height: 26px
+	}
+	.cha1 a button
+	{
+		margin: 20px;
+	
+	}
+		.cha1 .btn_help
+	{
+		margin-left: 100px;
+		
+	}
+
+
+	.cha2
+	{
+		display:flex;
+		flex-direction: column;
+	}
+	.cha2 .word
+	{
+		position: relative;
+		width: 500px;
+		/* background-color: greenyellow; */
+		/* left: 100px; */
+	}
+	.cha2 .pic
+	{
+		position: relative;
+		width: 100%;
+		/* left: 20px; */
+	}
+		.cha2 .label
+	{
+		font-size: 12px; 
+		text-align: center; 
+		margin-top: 70px;
+	}
+	.cha2 .label2
+	{
+		font-size: 36px;
+		text-align: center; 
+	}
+	.cha2 .label3
+	{
+		text-align: center; 
+		color: rgb(66, 66, 66); 
+		line-height: 26px
+	}
+	.cha2 a button
+	{
+		margin: 20px;
+	
+	}
+		.cha2 .btn_help
+	{
+		margin-left: 100px;
+		
+	}
+
+
+	.cha3
+	{
+		display:flex;
+		flex-direction: column-reverse;
+	}
+	.cha3 .word
+	{
+		position: relative;
+		width: 500px;
+		/* background-color: greenyellow; */
+		/* left: 100px; */
+	}
+	.cha3 .pic
+	{
+		position: relative;
+		width: 100%;
+		left: -50px;
+	}
+		.cha3 .label
+	{
+		font-size: 12px; 
+		text-align: center; 
+		margin-top: 70px;
+	}
+	.cha3 .label2
+	{
+		font-size: 36px;
+		text-align: center; 
+	}
+	.cha3 .label3
+	{
+		text-align: center; 
+		color: rgb(66, 66, 66); 
+		line-height: 26px
+	}
+	.cha3 a button
+	{
+		margin: 20px;
+	
+	}
+		.cha3 .btn_help
+	{
+		margin-left: 100px;
+		
+	}
+
+		.intro3 p
+	{
+		font-size: 12px;
+		color: rgb(80, 79, 79);
+		/* text-align: center; */
+		margin-top: 100px;
+		margin-left: 50px;
+		line-height: 24px;  
+		width: 500px;        
+		
+	}
+
+		.step1
+	{
+		
+		width: 120px;
+		margin-left: 10px;
+	}
+	.step2
+	{
+	
+		width: 120px;
+	}
+	.step3
+	{
+		
+		width: 120px;
+	}
+
+		.step1 img
+	{
+		max-width: 100px; 
+		height: auto;
+	}
+
+	.step2 img
+	{
+		max-width: 100px; 
+		height: auto;
+	}
+
+	.step3 img
+	{
+		max-width: 100px; 
+		height: auto;
+	}
+
+	.pic2
+	{
+		width: 300px;
+	
+
+	}
+
+	.pic3
+	{
+		width: 300px;
+
+	}
+	.pic4
+	{
+		width: 300px;
+
+	}
+	.cha4
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
+}
 
 </style>
 
@@ -225,39 +862,60 @@ button:hover
 
 <body>
 
-	<div class="header">
+	<nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<i class="fas fa-bars"></i>
+		</label>
 		<a href="index.html"><img src="image/實習判官logo.png" style="margin-left: 60px; margin-top: 10px;" width="108" sizes="108px"></a>
-
-		<!-- <div class="container"> -->
-		
+	    <ul>
+			<li><a href="article.html">看劇本</a></li>
+			<li><a href="#gorole">判官介紹</a></li>
+			<li><a href="#gostep">遊戲流程</a></li>
+			<li><a href="#gojoin">開始推理</a></li>
+			<li><a href="#gofaq">FAQ</a></li>
+			<li><a href="#gospon">贊助我們</a></li>
+			<li><a href="#gofb">FB 社團</a></li>
+			<li><a href="#gofb">聯絡我們</a></li>
+		</ul>
+	</nav>
+	
+	
+	
+	<!-- <div class="header">
+		<a href="index.html"><img src="image/實習判官logo.png" style="margin-left: 60px; margin-top: 10px;" width="108" sizes="108px"></a>
 		<nav>
+		
 		<ul class="title">
 			<li><a href="article.html">看劇本</a></li>
-			<li><a href="#">判官介紹</a></li>
-			<li><a href="#">遊戲流程</a></li>
-			<li><a href="#">開始推理</a></li>
-			<li><a href="#">FAQ</a></li>
-			<li><a href="#">贊助我們</a></li>
-			<li><a href="#">FB 社團</a></li>
-			<li><a href="#">聯絡我們</a></li>
+			<li><a href="#gorole">判官介紹</a></li>
+			<li><a href="#gostep">遊戲流程</a></li>
+			<li><a href="#gojoin">開始推理</a></li>
+			<li><a href="#gofaq">FAQ</a></li>
+			<li><a href="#gospon">贊助我們</a></li>
+			<li><a href="#gofb">FB 社團</a></li>
+			<li><a href="#gofb">聯絡我們</a></li>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			  </a>
+			
 		</ul>
+	    
 		</nav>
-	   
-		<!-- </div> -->
 				
-	</div>
+	</div> -->
 
 	<div class="container">
 
-		<img  src="image/10.jpg" width="1250px" >
-		<div class="centered" style=" width: 550px; height: 80px; background-color: rgb(0,0,0,0.5); color: white; font-size: 40px; " >
+		<img  src="image/10.jpg" style="max-width: 100%; height: auto;" >
+		<div class="centered" >
 			<p style=" top: -20px; text-align: center; position: relative;">實習判官</p>
 		</div>
 
-		<div class="centered2" style="opacity:0.6; color: #fff; font-size: 20px;">劇情 line bot 推理遊戲<br></div>
+		<div class="centered2" >劇情 line bot 推理遊戲<br></div>
 	
 			<div class="centered3"><a href="https://line.me/ti/p/@183sknuo">
-			 <button>開始推理</button></a>
+			 <button class="btn_start">開始推理</button></a>
 			</div>
 	
 	</div>
@@ -284,21 +942,21 @@ button:hover
 <!-- 第二區-->
 </br></br></br>
 
-<div class="cha1">
+<div class="cha1" id="gorole">
 	
-		<div class="word" style="margin-left: 50px;">
-			<div class="label" style="font-size: 12px; text-align: center; margin-top: 70px;">擅於觀察人際互動</div>
-			<h2 class="label2" style="font-size: 36px;text-align: left;">聽風判官 冥鏡</h2>
-			<p class="label3" style="color: rgb(66, 66, 66); line-height: 26px;  ">「這種簡單的小情報，花兩分鐘就調查出來了，剩</br>下的就交給你囉。」</p>
+		<div class="word" >
+			<div class="label" >擅於觀察人際互動</div>
+			<h2 class="label2" >聽風判官 冥鏡</h2>
+			<p class="label3">「這種簡單的小情報，花兩分鐘就調查出來了，剩下的就交給你囉。」</p>
 		</br>
 			<a href="https://line.me/ti/p/@183sknuo" >
-				<button style="margin-right: 10px;">協助他破案</button></a>
+				<button class="btn_help" >協助他破案</button></a>
 		
 			<a href="mingjing.html" ><button>判官介紹</button></a>
 		</div>
 
 		<div class="pic" style="margin-left: 60px; ">
-			<img src="image/冥鏡.png">	
+			<img src="image/冥鏡.png" style="max-width: 100%; height: auto;" >	
 		</div>
 </div>
 
@@ -307,16 +965,16 @@ button:hover
 	
 	
 	<div class="pic" style="margin-right: 120px;">
-		<img src="image/魅嵐.png">	
+		<img src="image/魅嵐.png" style="max-width: 100%; height: auto;" > 	
 	</div>
 
-	<div class="word" style="margin-left: 50px; ">
-		<div class="label" style="font-size: 12px; text-align: center;margin-top: 70px;">仔細觀察生活中大小事</div>
-		<h2 class="label2" style="font-size: 36px;text-align: left;">察微判官 魅嵐</h2>
-		<p class="label3" style="color: rgb(66, 66, 66); line-height: 26px;  ">「我喜歡把證物按照字首筆劃排序，你說我很奇</br>怪？你們這些不重視秩序的人才怪吧。」</p>
+	<div class="word" >
+		<div class="label" >仔細觀察生活中大小事</div>
+		<h2 class="label2" >察微判官 魅嵐</h2>
+		<p class="label3" >「我喜歡把證物按照字首筆劃排序，你說我很奇</br>怪？你們這些不重視秩序的人才怪吧。」</p>
 	</br>
 		<a href="https://line.me/ti/p/@183sknuo" >
-			<button style="margin-right: 10px;">協助她破案</button></a>
+			<button class="btn_help" >協助她破案</button></a>
 	
 		<a href="meilan.html" ><button>判官介紹</button></a>
 	</div>
@@ -325,41 +983,40 @@ button:hover
 
 <div class="cha3" style="margin-top: 80px;">
 	
-	<div class="word" style="margin-left: 50px;">
-		<div class="label" style="font-size: 12px; text-align: center; margin-top: 70px;">經常對靈魂自言自語</div>
-		<h2 class="label2" style="font-size: 36px;text-align: left;">讀夢判官 靈陽</h2>
-		<p class="label3" style="color: rgb(66, 66, 66); line-height: 26px;  ">「石獅寺有四十四隻石獅子，四十四隻石獅子吃四</br>十四枝芋仔冰芋仔冰好好吃我也好想吃喔端湯上塔？」</p>
+	<div class="word" >
+		<div class="label" >經常對靈魂自言自語</div>
+		<h2 class="label2" >讀夢判官 靈陽</h2>
+		<p class="label3" >「石獅寺有四十四隻石獅子，四十四隻石獅子吃四</br>十四枝芋仔冰芋仔冰好好吃我也好想吃喔端湯上塔？」</p>
 	</br>
 		<a href="https://line.me/ti/p/@183sknuo" >
-			<button style="margin-right: 10px;">協助他破案</button></a>
+			<button class="btn_help" style="margin-right: 10px;">協助他破案</button></a>
 	
 		<a href="#" ><button>判官介紹</button></a>
 	</div>
 
 	<div class="pic" style="margin-left: 120px; ">
-		<img src="image/靈陽.png">	
+		<img src="image/靈陽.png" style="max-width: 100%; height: auto;" >	
 	</div>
 </div>
 
 
-<div class="intro3" ><p>20世紀人口膨脹，冥界也陷入鬼口膨脹的危機，裝不下那麼多鬼魂的冥界現在只追求效率，
-	把亡魂快速投胎送回陽間。這導致原本有強力審判功能的十殿閻羅，變成了戶政事務所或
-	移民署一般的行政</br>機關。現在的閻王們只負責快速審理亡魂是否適合投胎，不再處理它們的生前事務。</p>
+<div class="intro3" ><p>20世紀人口膨脹，冥界也陷入鬼口膨脹的危機，裝不下那麼多鬼魂的冥界現在只追求效率，把亡魂快速投胎送回陽間。這導致原本有強力審判功能的十殿閻羅，變成了戶政事務所或
+	移民署一般的行政機關。</br>現在的閻王們只負責快速審理亡魂是否適合投胎，不再處理它們的生前事務。</p>
 </div>
 </br>
 <hr style="border-top: 0.5px solid #bbb;">
 
 <!-- 第三區-->
 
-<div class="step">
+<div class="step" id="gostep">
 	<h2 style="font-size: 36px; margin-top: 80px; text-align: center;">三個步驟開始推理</h2>
 	
 	<div class="step_con">
 
 		<div class="step1" >
-			<p style="font-size: 12px; text-align: center; color: gray;">步驟一</p>
+			<p class="step_num" >步驟一</p>
 			<h4 style="font-size: 24px;">挑選案件</h4>
-			<img src="image/step1.jpg" width="350px">
+			<img src="image/step1.jpg">
 			<p style="font-size: 16px;">首先創建 line 群組，邀請實習判官官方帳號加入</br>之後，邀請其他朋友加入後挑選案件</p>
 
 		</div>
@@ -367,7 +1024,7 @@ button:hover
 		<div class="step2" >
 			<p style="font-size: 12px;text-align: center;color: gray;">步驟二</p>
 			<h4 style="font-size: 24px;">案件推理</h4>
-			<img src="image/step2.jpg" width="350px">
+			<img src="image/step2.jpg" style="width: 250px; height: auto;">
 			<p style="font-size: 16px;">發揮判官的超能力以獲取線索，注意關係人與證物</br>間可能的連結，一步一步抽絲剝繭揭開案件全貌</p>
 
 		</div>
@@ -375,7 +1032,7 @@ button:hover
 		<div class="step3">
 			<p style="font-size: 12px;text-align: center;color: gray;">步驟三</p>
 			<h4 style="font-size: 24px;">回答問題</h4>
-			<img src="image/step3.jpg" width="350px">
+			<img src="image/step3.jpg" style="width: 250px; height: auto;">
 			<p style="font-size: 16px;">告訴小閻王你們認為的真相，重啟案件還被害者</br>一個公道</p>
 		</div>
 
@@ -385,10 +1042,10 @@ button:hover
 
 <!-- 第四區-->
 </br>
-<div class="join" >
+<div class="join" id="gojoin" >
 	<div class="join_con">
 	<p style="font-size: 36px;">現在加入</p>
-	<img src="image/qr.png" width="220px"></br></br>
+	<img src="image/qr.png" style="max-width:20%; height: auto;"></br></br>
 	<a href="https://line.me/ti/p/@183sknuo"><button>開始推理</button></a>
 	</div>
 </div>
@@ -403,7 +1060,7 @@ button:hover
 <!-- 第五區-->
 </br>
 
-<div class="faq">
+<div class="faq" id="gofaq">
 
 	<p style=" text-align: center; font-size: 40px;">ＦＡＱ</p>
 
@@ -425,7 +1082,7 @@ button:hover
 
 <!-- 第六區-->
 
-<div class="sponsor">
+<div class="sponsor" id="gospon" >
 	<div class="sponsor_con">
 	<p style="font-size: 36px;">贊助我們</p>
 	<img src="image/spon_qr.png" width="220px"></br></br>
@@ -433,17 +1090,17 @@ button:hover
 	</div>
 </div>
 
-<div class="cha4" style="margin-top: 80px; " >
+<div class="cha4" style=" margin-top: 80px; " id="gofb" >
 	
 	
 	<div class="pic" style="margin-left: 70px;">
-		<img src="image/小閻王.png">	
+		<img class="pic2" src="image/小閻王.png" >	
 	</div>
 
 	<div class="word" style="margin-left: 50px; ">
 		<p>想了解更多實習判官的內容？<br>想第一手收到實習判官的最新資訊？<br>現在加入我們的 FB 社團！</p>
-		<a style="cursor: pointer;" href="https://www.facebook.com/groups/869608936785909" target="_blank"><img src="image/share.png" width="300px"></a>
-		<img src="image/實習判官logo.png" width="250px">
+		<a style="cursor: pointer;" href="https://www.facebook.com/groups/869608936785909" target="_blank"><img class="pic3" src="image/share.png" width="300px"></a></br>
+		<img class="pic4" src="image/實習判官logo.png" width="250px">
 	</br>
 	</div>
 </div>

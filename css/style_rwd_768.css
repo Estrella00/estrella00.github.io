@@ -1,0 +1,206 @@
+@media(max-width:768px)
+{
+	.cha1
+	{
+		display:flex;
+		flex-direction: column-reverse;
+	}
+	.cha1 .word
+	{
+		position: relative;
+		width: 500px;
+		/* background-color: greenyellow; */
+		
+	}
+	.cha1 .pic
+	{
+		position: relative;
+		width: 100%;
+		left: -150px;
+	}
+		.cha1 .label
+	{
+		font-size: 12px; 
+		text-align: center; 
+		margin-top: 70px;
+	}
+	.cha1 .label2
+	{
+		font-size: 36px;
+		text-align: center; 
+	}
+	.cha1 .label3
+	{
+		text-align: center; 
+		color: rgb(66, 66, 66); 
+		line-height: 26px
+	}
+	.cha1 a button
+	{
+		margin: 20px;
+	
+	}
+		.cha1 .btn_help
+	{
+		margin-left: 100px;
+		
+	}
+
+
+	.cha2
+	{
+		display:flex;
+		flex-direction: column;
+	}
+	.cha2 .word
+	{
+		position: relative;
+		width: 500px;
+		/* background-color: greenyellow; */
+		/* left: 100px; */
+	}
+	.cha2 .pic
+	{
+		position: relative;
+		width: 100%;
+		/* left: 20px; */
+	}
+		.cha2 .label
+	{
+		font-size: 12px; 
+		text-align: center; 
+		margin-top: 70px;
+	}
+	.cha2 .label2
+	{
+		font-size: 36px;
+		text-align: center; 
+	}
+	.cha2 .label3
+	{
+		text-align: center; 
+		color: rgb(66, 66, 66); 
+		line-height: 26px
+	}
+	.cha2 a button
+	{
+		margin: 20px;
+	
+	}
+		.cha2 .btn_help
+	{
+		margin-left: 100px;
+		
+	}
+
+
+	.cha3
+	{
+		display:flex;
+		flex-direction: column-reverse;
+	}
+	.cha3 .word
+	{
+		position: relative;
+		width: 500px;
+		/* background-color: greenyellow; */
+		/* left: 100px; */
+	}
+	.cha3 .pic
+	{
+		position: relative;
+		width: 100%;
+		left: -50px;
+	}
+		.cha3 .label
+	{
+		font-size: 12px; 
+		text-align: center; 
+		margin-top: 70px;
+	}
+	.cha3 .label2
+	{
+		font-size: 36px;
+		text-align: center; 
+	}
+	.cha3 .label3
+	{
+		text-align: center; 
+		color: rgb(66, 66, 66); 
+		line-height: 26px
+	}
+	.cha3 a button
+	{
+		margin: 20px;
+	
+	}
+		.cha3 .btn_help
+	{
+		margin-left: 100px;
+		
+	}
+
+		.intro3 p
+	{
+		font-size: 12px;
+		color: rgb(80, 79, 79);
+		/* text-align: center; */
+		margin-top: 100px;
+		margin-left: 50px;
+		line-height: 24px;  
+		width: 500px;        
+		
+	}
+
+		.step1
+	{
+		
+		width: 180px;
+	}
+	.step2
+	{
+	
+		width: 180px;
+	}
+	.step3
+	{
+		
+		width: 180px;
+	}
+
+		.step1 img
+	{
+		max-width: 180px; 
+		height: auto;
+	}
+
+	.step2 img
+	{
+		max-width: 180px; 
+		height: auto;
+	}
+
+	.step3 img
+	{
+		max-width: 180px; 
+		height: auto;
+	}
+
+	.pic2
+	{
+		width: 300px;
+
+	}
+
+	.pic3
+	{
+		width: 180px;
+
+	}
+	.pic4
+	{
+		width: 150px;
+
+	}
+
+}
