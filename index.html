@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
 	<link rel="stylesheet" href="css/style.css"   type="text/css">
-	<link rel="stylesheet" href="css/style_rwd_768.css"   type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<script>
 
-		function myFunction() 
-		{
-			var x = document.getElementById("myTopnav");
-			if (x.className === "topnav") 
-			{
-				x.className += " responsive";
-			} 
-			else 
-			{
-				x.className = "topnav";
-			}
-		}
-
+		// function myFunction() 
+		// {
+		// 	var x = document.getElementById("myTopnav");
+		// 	if (x.className === "topnav") 
+		// 	{
+		// 		x.className += " responsive";
+		// 	} 
+		// 	else 
+		// 	{
+		// 		x.className = "topnav";
+		// 	}
+		// }
 		$(document).ready(function()
 		{
 		  // Add smooth scrolling to all links
@@ -39,6 +39,7 @@
 			  $('html, body').animate(
 				  {
 				scrollTop: $(hash).offset().top
+				
 			  }, 800, function()
 			  {
 		   
@@ -161,16 +162,20 @@ button:hover
 	text-align: center;
 	
 }
-
+.intro3
+{
+	width: 100%;
+	height: auto;
+}
 .intro3 p
 {
 	font-size: 12px;
 	color: rgb(80, 79, 79);
 	text-align: center;
 	margin-top: 100px;
-	margin-left: 170px;
+	
 	line-height: 24px;  
-	width: 900px;        
+	      
     
 }
 .intro4 p
@@ -193,7 +198,7 @@ button:hover
 .cha1 .word
 {
 	margin-left: 50px; 
-	width: 350px; 
+	/* width: 350px;  */
 }
 
 
@@ -365,6 +370,9 @@ button:hover
 {
 	display:flex;
 	flex-direction: row;
+	width: 100%;
+	height: auto;
+	text-align: center;
 	
 }	
 .pic2
@@ -541,17 +549,17 @@ button:hover
 		
 	}
 
-		.intro3 p
+		/* .intro3 p
 	{
 		font-size: 12px;
 		color: rgb(80, 79, 79);
-		/* text-align: center; */
+		/* text-align: center; 
 		margin-top: 100px;
 		margin-left: 50px;
 		line-height: 24px;  
 		width: 500px;        
 		
-	}
+	} */
 
 		.step1
 	{
@@ -606,7 +614,7 @@ button:hover
 
 }
 
-@media(max-width:500px)
+@media only screen and (min-width: 321px) and (max-width: 768px) 
 {
 		.centered
 	{
@@ -632,23 +640,41 @@ button:hover
 		background-color:rgb(0,0,0);
 	}
 
+	.intro2 
+	{
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+
+	.intro2 p
+	{
+		font-size: 13px;
+		
+	}
+
 	.cha1
 	{
 		display:flex;
 		flex-direction: column-reverse;
+		width: 100%;
+		height: auto;
 	}
 	.cha1 .word
 	{
-		position: relative;
-		width: 500px;
-		/* background-color: greenyellow; */
+		/* position: relative; */
+		width: 100%;
+		height: auto;
+			/* background-color: greenyellow; */
 		
 	}
+
+
 	.cha1 .pic
 	{
 		position: relative;
 		width: 100%;
-		left: -150px;
+		left: -50px;
 	}
 		.cha1 .label
 	{
@@ -687,7 +713,8 @@ button:hover
 	.cha2 .word
 	{
 		position: relative;
-		width: 500px;
+		width: 100%;
+		height: auto;
 		/* background-color: greenyellow; */
 		/* left: 100px; */
 	}
@@ -734,7 +761,8 @@ button:hover
 	.cha3 .word
 	{
 		position: relative;
-		width: 500px;
+		width: 100%;
+		height: auto;
 		/* background-color: greenyellow; */
 		/* left: 100px; */
 	}
@@ -772,17 +800,17 @@ button:hover
 		
 	}
 
-		.intro3 p
+		/* .intro3 p
 	{
 		font-size: 12px;
 		color: rgb(80, 79, 79);
-		/* text-align: center; */
+		/* text-align: center; 
 		margin-top: 100px;
 		margin-left: 50px;
 		line-height: 24px;  
 		width: 500px;        
 		
-	}
+	} */
 
 		.step1
 	{
@@ -929,7 +957,7 @@ button:hover
 
 	<div class="intro2">
 
-		<p style="margin-top: 50px; font-size: 37px; color: #000;">四大特色</p>
+		<p class="four" style="margin-top: 50px; font-size: 37px; color: #000;">四大特色</p>
 			
 	        <p>不用下載任何 App，創建 Line 群組即可開始推理 🎮</p>
 			<p>多人協力推理，難解的懸案不再一個人面對 🔍</p>
@@ -947,7 +975,7 @@ button:hover
 		<div class="word" >
 			<div class="label" >擅於觀察人際互動</div>
 			<h2 class="label2" >聽風判官 冥鏡</h2>
-			<p class="label3">「這種簡單的小情報，花兩分鐘就調查出來了，剩下的就交給你囉。」</p>
+			<p class="label3">「這種簡單的小情報，花兩分鐘就調查出來了，剩<br>下的就交給你囉。」</p>
 		</br>
 			<a href="https://line.me/ti/p/@183sknuo" >
 				<button class="btn_help" >協助他破案</button></a>
