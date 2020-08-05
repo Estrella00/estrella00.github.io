@@ -26,7 +26,11 @@ nav
 }
 
 
-
+.img_logo
+{
+	margin-left: 60px; 
+	margin-top: 10px;
+}
 
 button 
 {
@@ -46,6 +50,7 @@ button:hover
 .intro_word
 {
 	line-height: 26px;
+	margin-left: 50px;
 }
 
 .join
@@ -63,11 +68,78 @@ button:hover
 {
 	display:flex;
 	flex-direction: column;
-	
+    height: 450px;
 	align-items: center;
+}
+blockquote 
+{
+	
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 15px 30px;
+    border-left: 5px solid #e2e2e2;
+    font-size: 18px;
+    line-height: 34px;
+}
+.intro_p1
+{
+	font-size: 16px;
+	color: grey;
+	width: 1100px;
+}
+.intro_p2
+{
+	font-size: 16px;
+	color: grey;
+	width: 1100px;
 }
 
 
+@media only screen and (min-width: 321px) and (max-width: 768px) 
+{
+	.intro
+	{
+		text-align: center;
+	}
+		blockquote 
+	{
+		font-size: 15px;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		margin-left: 5px;
+		border-left: 5px solid #e2e2e2;
+		font-size: 20px;
+		line-height: 22px;
+	}
+
+		.intro_word
+	{
+		line-height: 24px;
+		margin-left: 2px;
+	}
+
+		.intro_p1
+	{
+		font-size: 16px;
+		color: grey;
+		width: 100%;
+	}
+	.intro_p2
+	{
+		font-size: 16px;
+		color: grey;
+		width: 100%;
+	}
+
+
+
+	.img_logo
+	{
+		margin-left: 5px; 
+		margin-top: 10px;
+		
+	}
+}
 </style>
 
 
@@ -78,9 +150,9 @@ button:hover
 	<nav>
 		<input type="checkbox" id="check">
 		<label for="check" class="checkbtn">
-			<i class="fas fa-bars"></i>
+			<img class="fas fa-bars" src="image/check.png" width="20px">
 		</label>
-		<a href="index.html"><img src="image/實習判官logo.png" style="margin-left: 60px; margin-top: 10px;" width="108" sizes="108px"></a>
+		<a href="index.html"><img class="img_logo" src="image/實習判官logo.png"  width="108" sizes="108px"></a>
 	    <ul>
 			<li><a href="article.html">看劇本</a></li>
 			<li><a href="#gorole">判官介紹</a></li>
@@ -95,39 +167,45 @@ button:hover
 	
 	<br>
 
-	<div class="intro_con">
+	<div class="intro">
 
-		<div class="intro_minjing" style="text-align: center;" >
-			<img src="image/intro_minjing.png" width="380" ><br>
-			<img src="image/word_minjing.png" width="450" >
+		<div class="intro_con">
 
-		</div>
-		
-		<div class="intro_word" style=" margin-left: 50px;">
-			<blockquote style="font-size: 20px;">「你問我怎麼從別人口中套話？嗯，多多去跟那些鬼吏大媽串門子吧。」</blockquote>
-			<p style="font-size: 24px;">聲優</p>
-			<a href="https://drive.google.com/open?id=1qE6xRdriH9UNntgaoHn8qxSsnY2XVT5h" target="_blank">單句試聽 🔉</a>
-			<p style="font-size: 24px;" >簡介</p>
-			<p style="font-size: 16px; color: grey;">冥鏡是一位擅長語言跟文字、洞悉人性的判官，可以從他人透露的片段資訊中判斷出更多的資訊，也擅長誘導對方談話、操縱他人情緒，以得
-				到自己想要的結果。很聰明的判官。但是對判官的事情不是很熱情，之所以願意當實習判官是因為不想太早投
-				胎，看似對甚麼事都不太在意的他，心中有一部分很想找出自己的死因。喜歡會跑去冥界的其他部門串門子，主要是為了摸魚，也喜歡抬槓，會幫別的鬼算命。</p>
-			<p style="font-size: 24px;">生前故事</p>
-			<p style="font-size: 16px;color: grey;">年輕剛畢業時當過一陣子調查記者，當時很有熱情，但受到某個事件的打擊，放棄了記者生涯。他擅長冷讀術，很會套別人的話，不當
-		        記者之後把這個能力用在當命理網紅上面，賺了不少錢，但他本身完全不相信命理。雖然不再當記者，仍然沒有完全放棄
-				追查當年的事件，但這個事件導致他的死亡。</p>
+			<div class="intro_minjing" style="text-align: center;" >
+				<img src="image/intro_minjing.png" width="380" ><br>
+				<img src="image/word_minjing.png" width="450" >
+
+			</div>
 			
-		
+			<div class="intro_word">
+				<blockquote>「你問我怎麼從別人口中套話？嗯，多多去跟那些鬼吏大媽串門子吧。」</blockquote>
+				<br>
+				<p style="font-size: 24px;">聲優</p>
+				<a href="https://drive.google.com/open?id=1qE6xRdriH9UNntgaoHn8qxSsnY2XVT5h" target="_blank" style="color: black;">單句試聽 🔉</a>
+				<br><br>
+				<p style="font-size: 24px;" >簡介</p>
+				<p class="intro_p1" >冥鏡是一位擅長語言跟文字、洞悉人性的判官，可以從他人透露的片段資訊中判斷出更多的資訊，也擅長誘導對方談話、操縱他人情緒，以得
+					到自己想要的結果。很聰明的判官。但是對判官的事情不是很熱情，之所以願意當實習判官是因為不想太早投
+					胎，看似對甚麼事都不太在意的他，心中有一部分很想找出自己的死因。喜歡會跑去冥界的其他部門串門子，主要是為了摸魚，也喜歡抬槓，會幫別的鬼算命。</p>
+				<br>
+					<p style="font-size: 24px;">生前故事</p>
+				<p class="intro_p2" style="font-size: 16px;color: grey;">年輕剛畢業時當過一陣子調查記者，當時很有熱情，但受到某個事件的打擊，放棄了記者生涯。他擅長冷讀術，很會套別人的話，不當
+					記者之後把這個能力用在當命理網紅上面，賺了不少錢，但他本身完全不相信命理。雖然不再當記者，仍然沒有完全放棄
+					追查當年的事件，但這個事件導致他的死亡。</p>
+				
+			
+			</div>
 		</div>
-	</div>
 
-	<div class="join" >
-		<div class="join_con">
-		<p style="font-size: 36px;">現在加入</p>
-		<img src="image/qr.png" width="220px"></br></br>
-		<a href="https://line.me/ti/p/@183sknuo"><button>開始推理</button></a>
+		<div class="join" >
+			<div class="join_con">
+			<p style="font-size: 36px;">現在加入</p>
+			<img src="image/qr.png" width="220px"></br></br>
+			<a href="https://line.me/ti/p/@183sknuo"><button>開始推理</button></a>
+			</div>
 		</div>
+
 	</div>
-	
 	
 </body>
 </html>

@@ -30,9 +30,15 @@
   justify-content: center;
  
 } */
-*
+
+.content
 {
 	text-align: center;
+}
+.img_logo
+{
+	/* margin-left: -60px;  */
+	margin-top: 10px;
 }
 .parag1
 {
@@ -100,7 +106,7 @@ button:hover
 {
 	display:flex;
 	flex-direction: column;
-	
+    height: 450px;
 	align-items: center;
 }
 .img1
@@ -141,6 +147,16 @@ button:hover
 	margin:-30px auto;
 	
 }
+
+@media only screen and (min-width: 321px) and (max-width: 768px) 
+{
+
+	.img_logo
+	{
+		margin-left: 5px; 
+		margin-top: 10px;
+	}
+}
 </style>
 
 
@@ -152,9 +168,9 @@ button:hover
 	<nav>
 		<input type="checkbox" id="check">
 		<label for="check" class="checkbtn">
-			<i class="fas fa-bars"></i>
+			<img class="fas fa-bars" src="image/check.png" width="20px">
 		</label>
-		<a href="index.html"><img src="image/實習判官logo.png" style="margin-left: 60px; margin-top: 10px;" width="108" sizes="108px"></a>
+		<a href="index.html"><img class="img_logo" src="image/實習判官logo.png"  width="108" sizes="108px"></a>
 	    <ul>
 			<li><a href="article.html">看劇本</a></li>
 			<li><a href="#gorole">判官介紹</a></li>
