@@ -17,23 +17,37 @@
 	人會下地獄，小善小惡的一般人則會把生前記憶跟遺憾解決之後，就重新投胎。" property="og:description">
 	
 	</head>
-	
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<script>
+//跳頁滾動
+        $(function()
+		{
+			$(".menu a").on('click',function(){
+				$("html, body").animate({
+					scrollTop: $($.attr(this,'href')).offset().top
+				},1500);
+			});
 
-		// function myFunction() 
-		// {
-		// 	var x = document.getElementById("myTopnav");
-		// 	if (x.className === "topnav") 
-		// 	{
-		// 		x.className += " responsive";
-		// 	} 
-		// 	else 
-		// 	{
-		// 		x.className = "topnav";
-		// 	}
-		// }
+			if(window.location.hash)
+			{
+				scroll(0,0);
+				setTimeout(function()
+				{
+					scroll(0,0);
+				},1);
+			}
+
+			if(window.location.hash)
+			{
+				$("html, body").animate({
+					scrollTop: $(window.location.hash).offset().top+'px'
+				},1500);
+			}
+		});
+
+//自身滾動
 		$(document).ready(function()
 		{
 		  // Add smooth scrolling to all links

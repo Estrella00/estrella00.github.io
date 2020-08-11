@@ -14,6 +14,24 @@
 		<meta content="魅嵐是一個認真又熱情的鬼，非常期待自己能夠成為判官，不過有時候過於認真，讓充滿官僚氣息只想提早下班的冥界部門覺得她太誇張。" property="twitter:description">
 	</head>
 
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script>
+//跳頁滾動
+	    $(function()
+		{
+			$(".menu a").on('click',function(){
+				$("html, body").animate({
+					scrollTop: $($.attr(this,'href')).offset().top
+				},1500);
+			});
+
+		
+		});
+	</script>
+
 <style>
 
 
@@ -173,13 +191,13 @@ blockquote
 		<a href="index.html"><img class="img_logo" src="image/實習判官logo.png"  width="108" sizes="108px"></a>
 	    <ul>
 			<li><a href="article.html">看劇本</a></li>
-			<li><a href="#gorole">判官介紹</a></li>
-			<li><a href="#gostep">遊戲流程</a></li>
-			<li><a href="#gojoin">開始推理</a></li>
-			<li><a href="#gofaq">FAQ</a></li>
-			<li><a href="#gospon">贊助我們</a></li>
-			<li><a href="#gofb">FB 社團</a></li>
-			<li><a href="#gofb">聯絡我們</a></li>
+			<li><a href="index.html#gorole">判官介紹</a></li>    
+			<li><a href="index.html#gostep">遊戲流程</a></li>
+			<li><a href="index.html#gojoin">開始推理</a></li>
+			<li><a href="index.html#gofaq">FAQ</a></li>
+			<li><a href="index.html#gospon">贊助我們</a></li>
+			<li><a href="index.html#gofb">FB 社團</a></li>
+			<li><a href="index.html#gofb">聯絡我們</a></li>
 		</ul>
 	</nav>
 	

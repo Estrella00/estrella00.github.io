@@ -18,152 +18,169 @@
 	
 	</head>
 
-<style>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script>
+//跳頁滾動
+	    $(function()
+		{
+			$(".menu a").on('click',function(){
+				$("html, body").animate({
+					scrollTop: $($.attr(this,'href')).offset().top
+				},1500);
+			});
+
+		
+		});
+	</script>
+		
+	<style>
 
 
-nav
-{
-	width: 100%;
-	height: 100px;
-}
-
-
-.img_logo
-{
-	margin-left: 60px; 
-	margin-top: 10px;
-}
-
-button 
-{
-
-  color: white; 
-  width:120px;
-  height:40px;
-  border:none;
-  background-color:rgb(0,0,0);
-}
-button:hover
-{
-	cursor:pointer;
-	background-color: rgb(37, 37, 37);
-	
-}
-.intro_word
-{
-	line-height: 26px;
-	margin-left: 50px;
-}
-
-.join
-{
-	
-	background-color: rgb(241, 239, 236);
-	/* width: 1200px;
-	height: 475px; */
-	width: 100%;
-	height: auto;
-  margin: 100px auto 150px auto ;
-	
-}
-.join_con
-{
-	display:flex;
-	flex-direction: column;
-    height: 450px;
-	align-items: center;
-}
-blockquote 
-{
-	margin-left: 5px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-   
-    border-left: 5px solid #e2e2e2;
-    font-size: 18px;
-    line-height: 34px;
-}
-.intro_p1
-{
-	font-size: 16px;
-	color: grey;
-	width: 1100px;
-}
-.intro_p2
-{
-	font-size: 16px;
-	color: grey;
-	width: 1100px;
-}
-
-.img1
-{
-	width:380px;
-}
-
-.img2
-{
-	width:500px;
-}
-
-
-@media only screen and (min-width: 321px) and (max-width: 768px) 
-{
-	.intro
+	nav
 	{
-		text-align: center;
+		width: 100%;
+		height: 100px;
 	}
 
-	.img1
+
+	.img_logo
 	{
-		width:280px;
+		margin-left: 60px; 
+		margin-top: 10px;
 	}
 
-	.img2
+	button 
 	{
-		width:350px;
+
+	color: white; 
+	width:120px;
+	height:40px;
+	border:none;
+	background-color:rgb(0,0,0);
+	}
+	button:hover
+	{
+		cursor:pointer;
+		background-color: rgb(37, 37, 37);
+		
+	}
+	.intro_word
+	{
+		line-height: 26px;
+		margin-left: 50px;
 	}
 
-		blockquote 
+	.join
 	{
-		font-size: 15px;
+		
+		background-color: rgb(241, 239, 236);
+		/* width: 1200px;
+		height: 475px; */
+		width: 100%;
+		height: auto;
+	margin: 100px auto 150px auto ;
+		
+	}
+	.join_con
+	{
+		display:flex;
+		flex-direction: column;
+		height: 450px;
+		align-items: center;
+	}
+	blockquote 
+	{
+		margin-left: 5px;
 		margin-top: 25px;
 		margin-bottom: 25px;
-		padding: 15px 30px;
+	
 		border-left: 5px solid #e2e2e2;
-		font-size: 20px;
-		line-height: 22px;
+		font-size: 18px;
+		line-height: 34px;
 	}
-
-		.intro_word
-	{
-		line-height: 24px;
-		margin-left: 2px;
-	}
-
-		.intro_p1
+	.intro_p1
 	{
 		font-size: 16px;
 		color: grey;
-		width: 100%;
+		width: 1100px;
 	}
 	.intro_p2
 	{
 		font-size: 16px;
 		color: grey;
-		width: 100%;
+		width: 1100px;
 	}
 
-
-
-	.img_logo
+	.img1
 	{
-		margin-left: 5px; 
-		margin-top: 10px;
-		
+		width:380px;
 	}
-}
-</style>
+
+	.img2
+	{
+		width:500px;
+	}
+
+
+	@media only screen and (min-width: 321px) and (max-width: 768px) 
+	{
+		.intro
+		{
+			text-align: center;
+		}
+
+		.img1
+		{
+			width:280px;
+		}
+
+		.img2
+		{
+			width:350px;
+		}
+
+			blockquote 
+		{
+			font-size: 15px;
+			margin-top: 25px;
+			margin-bottom: 25px;
+			padding: 15px 30px;
+			border-left: 5px solid #e2e2e2;
+			font-size: 20px;
+			line-height: 22px;
+		}
+
+			.intro_word
+		{
+			line-height: 24px;
+			margin-left: 2px;
+		}
+
+			.intro_p1
+		{
+			font-size: 16px;
+			color: grey;
+			width: 100%;
+		}
+		.intro_p2
+		{
+			font-size: 16px;
+			color: grey;
+			width: 100%;
+		}
+
+
+
+		.img_logo
+		{
+			margin-left: 5px; 
+			margin-top: 10px;
+			
+		}
+	}
+	</style>
 
 
 
@@ -178,13 +195,13 @@ blockquote
 		<a href="index.html"><img class="img_logo" src="image/實習判官logo.png"  width="108" sizes="108px"></a>
 	    <ul>
 			<li><a href="article.html">看劇本</a></li>
-			<li><a href="#gorole">判官介紹</a></li>
-			<li><a href="#gostep">遊戲流程</a></li>
-			<li><a href="#gojoin">開始推理</a></li>
-			<li><a href="#gofaq">FAQ</a></li>
-			<li><a href="#gospon">贊助我們</a></li>
-			<li><a href="#gofb">FB 社團</a></li>
-			<li><a href="#gofb">聯絡我們</a></li>
+			<li><a href="index.html#gorole">判官介紹</a></li>    
+			<li><a href="index.html#gostep">遊戲流程</a></li>
+			<li><a href="index.html#gojoin">開始推理</a></li>
+			<li><a href="index.html#gofaq">FAQ</a></li>
+			<li><a href="index.html#gospon">贊助我們</a></li>
+			<li><a href="index.html#gofb">FB 社團</a></li>
+			<li><a href="index.html#gofb">聯絡我們</a></li>
 		</ul>
 	</nav>
 	
