@@ -57,6 +57,7 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
+		margin-top: 50px;
 	}
 
 
@@ -80,6 +81,7 @@
 		display: flex;
 		flex-direction: row;
 		height: 200px;
+		margin-top: 20px;
 	}
 	
 	.intro3
@@ -169,16 +171,34 @@
 	color:rgb(222, 222, 226);
 	font-size: 15px;
 }
+.title2
+{
+	color:#c98930; 
+	font-size: 20px;
+	margin: 15px;
+}
 
 
 
 @media only screen and (min-width: 321px) and (max-width: 768px) 
 {
+	.title2
+{
+	color:#c98930; 
+	font-size: 16px;
+	margin: 10px;
+}
+
 	.img_logo
 	{
 		width: 120px;
 		margin: 20px;
 		
+	}
+	.img_me 
+	{
+		width: 230px;
+		margin: 10px;
 	}
 	.area1
 	{
@@ -213,6 +233,7 @@
 		position: relative;
 		transition: all 5s ease-in-out;
 	}
+	
 }
 
 </style>
@@ -239,15 +260,15 @@
 <div class="area1">
 	<div style="text-align: center; background-color: rgb(56, 63, 83); border-radius: 50px;padding: 60px; margin-bottom: 20px;" >
 		<img class="img_me"src="image/me2.png">
-		<h3 style="color:rgb(252, 238, 232); font-weight: normal;margin: 15px; ">洪宛鈴</br>Wan Ling Hong </h3>
-		<p  style="color:rgb(252, 238, 232); line-height: 28px;margin: 15px;">1997/12/05</br>臺灣 桃園人</p>
-		<p  style="color:rgb(252, 238, 232); line-height: 28px;">元智大學 資訊傳播學系</br>大園國際高中 西班牙文組</p>
-		<p  style="color:rgb(252, 238, 232); line-height: 28px;margin: 15px;">e-mail : sunnyforest00@gmail.com</sunnyforest00@gmail></p>
+		<h3 style="color:rgb(248, 248, 248); font-weight: normal;margin: 15px; ">洪宛鈴</br>Wan Ling Hong </h3>
+		<p  style="color:rgb(248, 248, 248); line-height: 28px;margin: 15px;">1997/12/05</br>臺灣 桃園人</p>
+		<p  style="color:rgb(248, 248, 248); line-height: 28px;">元智大學 資訊傳播學系</br>大園國際高中 西班牙文組</p>
+		<p  style="color:rgb(248, 248, 248); line-height: 28px;margin: 15px;">e-mail : sunnyforest00@gmail.com</sunnyforest00@gmail></p>
 		
 	</div>
 	
 	<div style="display: flex;
-				height: 600px;
+				height: 900px;
 				flex-direction:column;
 				background-color: rgb(56, 63, 83); 
 				border-radius: 50px; 
@@ -255,31 +276,33 @@
 				justify-content:flex-start;">
 		<div class="intro">	
 			<div>
-			<h4  style="color:#c98930; font-size: 20px;margin: 15px;">語言</h4>
-			<p  style="color:rgb(252, 238, 232); line-height: 28px;margin: 15px;">中文</br>英文(GEPT 中級、TOEIC 650分)</br>西班牙文(SFLPT A1)</p>
+			<h4 class="title2" >語言</h4>
+			<p  style="color:rgb(248, 248, 248); line-height: 28px;margin: 15px;">中文</br>英文(GEPT 中級、TOEIC 650分)</br>西班牙文(SFLPT A1)</p>
 			</div>
 
 			<div>
-				<h4  style="color:#c98930; font-size: 20px;margin: 15px;">技能</h4>
-				<p  style="color:rgb(252, 238, 232); line-height: 28px;margin: 15px;">Adobe Photoshop、Illustrator</br>Adobe Premiere</br>HTML、CSS、JavaScript、jQuery</br>php、Arduino</p>
+				<h4 class="title2">技能</h4>
+				<p  style="color:rgb(248, 248, 248); line-height: 28px;margin: 15px;">Adobe Photoshop、Illustrator</br>Adobe Premiere</br>HTML、CSS、JavaScript、jQuery</br>php、Arduino</p>
 				</div>
 		</div>
 		<!-- <a class="button" href="#popup1">Let me Pop up</a> -->
-		<div class="intro2">	
-			<div>
-			<h4  style="color:#c98930; font-size: 20px;margin: 15px;">經驗</h4>
-			<h5 style="color:#c98930; position: relative;top: -40px;left: 60px; margin-bottom: -25px;">(點入有詳細介紹)</h5>
-			<a class="button" href="#popup1">2020 畢業製作入圍放視大賞</a></br>
-			<a class="button" href="#popup2">2019 淇奧友善股份有限公司</br>&emsp; &emsp; &emsp;&ensp;暑期實習生(程式組)</a></br>
-			<a class="button" href="#popup6">&emsp; &ensp; &ensp; 三校課程成果展</a></br>
-			<a class="button" href="#popup3">2018 參加XR開發者黑客松大賽</a></br>
-			<a class="button" href="#popup4">2017 桃園電影節志工</br>&emsp; &emsp; &emsp;&ensp;麥當勞工讀生</a></br>
-			<a class="button" href="#popup5">2016 參加Youth青年志工大聯盟</br>&emsp; &emsp; &emsp;&ensp;擔任社團團遊的活動長</br>&emsp; &emsp; &emsp;&ensp;擔任社團送舊美宣長</a>
+		<div class="intro2">
+
+			<div style="margin-top: 50px; " >
+
+			<h4  class="title2">經驗</h4>
+			<h5 style="color:#c98930; position: relative;top: -40px;left: 50px; margin-bottom: -25px;">(點入有詳細介紹)</h5>
+			<a class="button" href="#popup1">2020</br> 畢業製作入圍放視大賞</a></br>
+			<a class="button" href="#popup2">2019</br> 淇奧友善股份有限公司暑期實習生(程式組)</a></br>
+			<a class="button" href="#popup6" style="margin-left: -5px;" >三校課程成果展</a></br>
+			<a class="button" href="#popup3">2018</br> 參加XR開發者黑客松大賽</a></br>
+			<a class="button" href="#popup4">2017</br> 桃園電影節志工</br>麥當勞工讀生</a></br>
+			<a class="button" href="#popup5">2016</br> 參加Youth青年志工大聯盟</br>擔任社團團遊的活動長</br>擔任社團送舊美宣長</a>
 			
 			</div>
 
-			<div>
-				<h4  style="color:#c98930; font-size: 20px;margin: 15px;">興趣</h4>
+			<div style="margin-top: 50px;" >
+				<h4 class="title2">興趣</h4>
 				<p  style="color:rgb(252, 238, 232); line-height: 28px;margin: 15px;">攝影、聽音樂、彈鋼琴、組樂高</br>拼圖、騎怎踏車、登山</p>
 				</div>
 		</div>
