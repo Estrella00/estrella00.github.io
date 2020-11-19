@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+	<link rel="stylesheet" href="css/style.css"   type="text/css">
+	
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<title>聽風判官 冥鏡 | 判官人物介紹 | 實習判官</title>
+		<meta content="冥鏡擅長語言跟文字、洞悉人性的鬼，可以從他人透露的片段資訊中判斷出更多的資訊，也擅長誘導對方談話、操縱他人情緒，以得到自己想要的結果。很聰明的鬼。" name="description">
+		<meta content="聽風判官 冥鏡 | 判官人物介紹 | 實習判官" property="og:title">
+		<meta content="冥鏡擅長語言跟文字、洞悉人性的鬼，可以從他人透露的片段資訊中判斷出更多的資訊，也擅長誘導對方談話、操縱他人情緒，以得到自己想要的結果。很聰明的鬼。" property="og:description"><meta content="https://uploads-ssl.webflow.com/5d5cbbfa0a3fc978693413d2/5eb1041cc8c08b069f3b8cef_%E7%B6%B2%E9%A0%81%E4%BA%BA%E7%89%A9%E4%BB%8B%E7%B4%B9-%E5%86%A5%E9%8F%A1.png" property="og:image">
+		<meta content="聽風判官 冥鏡 | 判官人物介紹 | 實習判官" property="twitter:title">
+		<meta content="冥鏡擅長語言跟文字、洞悉人性的鬼，可以從他人透露的片段資訊中判斷出更多的資訊，也擅長誘導對方談話、操縱他人情緒，以得到自己想要的結果。很聰明的鬼。" property="twitter:description"><meta content="https://uploads-ssl.webflow.com/5d5cbbfa0a3fc978693413d2/5eb1041cc8c08b069f3b8cef_%E7%B6%B2%E9%A0%81%E4%BA%BA%E7%89%A9%E4%BB%8B%E7%B4%B9-%E5%86%A5%E9%8F%A1.png" property="twitter:image">
+	
+	</head>
+
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script>
+//跳頁滾動
+	    $(function()
+		{
+			$(".menu a").on('click',function(){
+				$("html, body").animate({
+					scrollTop: $($.attr(this,'href')).offset().top
+				},1500);
+			});
+
+		
+		});
+	</script>
+
+<style>
+
+
+nav
+{
+	width: 100%;
+	height: 100px;
+}
+
+
+.img_logo
+{
+	margin-left: 60px; 
+	margin-top: 10px;
+}
+
+button 
+{
+
+  color: white; 
+  width:120px;
+  height:40px;
+  border:none;
+  background-color:rgb(0,0,0);
+}
+button:hover
+{
+	cursor:pointer;
+	background-color: rgb(37, 37, 37);
+	
+}
+.intro_word
+{
+	line-height: 26px;
+	margin-left: 50px;
+}
+
+.join
+{
+	
+	background-color: rgb(241, 239, 236);
+	/* width: 1200px;
+	height: 475px; */
+	width: 100%;
+	height: auto;
+  margin: 100px auto 150px auto ;
+	
+}
+.join_con
+{
+	display:flex;
+	flex-direction: column;
+    height: 450px;
+	align-items: center;
+}
+blockquote 
+{
+	
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 15px 30px;
+    border-left: 5px solid #e2e2e2;
+    font-size: 18px;
+    line-height: 34px;
+}
+.intro_p1
+{
+	font-size: 16px;
+	color: grey;
+	width: 1100px;
+}
+.intro_p2
+{
+	font-size: 16px;
+	color: grey;
+	width: 1100px;
+}
+.img1
+{
+	width:380px;
+}
+
+.img2
+{
+	width:500px;
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px) 
+{
+	.intro
+	{
+		text-align: center;
+	}
+
+	.img1
+	{
+		width:280px;
+	}
+
+	.img2
+	{
+		width:350px;
+	}
+
+	blockquote 
+	{
+		font-size: 15px;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		margin-left: 5px;
+		border-left: 5px solid #e2e2e2;
+		font-size: 20px;
+		line-height: 22px;
+	}
+
+		.intro_word
+	{
+		line-height: 24px;
+		margin-left: 2px;
+	}
+
+		.intro_p1
+	{
+		font-size: 16px;
+		color: grey;
+		width: 100%;
+	}
+	.intro_p2
+	{
+		font-size: 16px;
+		color: grey;
+		width: 100%;
+	}
+
+
+
+	.img_logo
+	{
+		margin-left: 5px; 
+		margin-top: 10px;
+		
+	}
+}
+</style>
+
+
+
+
+<body>
+
+	<nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<img class="fas fa-bars" src="image/check.png" width="20px">
+		</label>
+		<a href="index.html"><img class="img_logo" src="image/實習判官logo.png"  width="108" sizes="108px"></a>
+	    <ul>
+			<li><a href="article.html">看劇本</a></li>
+			<li><a href="index.html#gorole">判官介紹</a></li>    
+			<li><a href="index.html#gostep">遊戲流程</a></li>
+			<li><a href="index.html#gojoin">開始推理</a></li>
+			<li><a href="index.html#gofaq">FAQ</a></li>
+			<li><a href="index.html#gospon">贊助我們</a></li>
+			<li><a href="index.html#gofb">FB 社團</a></li>
+			<li><a href="index.html#gofb">聯絡我們</a></li>
+		</ul>
+	</nav>
+	
+	<br>
+
+	<div class="intro">
+
+		<div class="intro_con">
+
+			<div class="intro_minjing" style="text-align: center;" >
+				<img class="img1" src="image/intro_minjing.png" ><br>
+				<img class="img2"src="image/word_minjing.png" >
+
+			</div>
+			
+			<div class="intro_word">
+				<blockquote>「你問我怎麼從別人口中套話？嗯，多多去跟那些鬼吏大媽串門子吧。」</blockquote>
+				<br>
+				<p style="font-size: 24px;">聲優</p>
+				<a href="https://drive.google.com/open?id=1qE6xRdriH9UNntgaoHn8qxSsnY2XVT5h" target="_blank" style="color: black;">單句試聽 🔉</a>
+				<br><br>
+				<p style="font-size: 24px;" >簡介</p>
+				<p class="intro_p1" >冥鏡是一位擅長語言跟文字、洞悉人性的判官，可以從他人透露的片段資訊中判斷出更多的資訊，也擅長誘導對方談話、操縱他人情緒，以得
+					到自己想要的結果。很聰明的判官。但是對判官的事情不是很熱情，之所以願意當實習判官是因為不想太早投
+					胎，看似對甚麼事都不太在意的他，心中有一部分很想找出自己的死因。喜歡會跑去冥界的其他部門串門子，主要是為了摸魚，也喜歡抬槓，會幫別的鬼算命。</p>
+				<br>
+					<p style="font-size: 24px;">生前故事</p>
+				<p class="intro_p2" style="font-size: 16px;color: grey;">年輕剛畢業時當過一陣子調查記者，當時很有熱情，但受到某個事件的打擊，放棄了記者生涯。他擅長冷讀術，很會套別人的話，不當
+					記者之後把這個能力用在當命理網紅上面，賺了不少錢，但他本身完全不相信命理。雖然不再當記者，仍然沒有完全放棄
+					追查當年的事件，但這個事件導致他的死亡。</p>
+				
+			
+			</div>
+		</div>
+
+		<div class="join" >
+			<div class="join_con">
+			<p style="font-size: 36px;">現在加入</p>
+			<img src="image/qr.png" width="220px"></br></br>
+			<a href="https://line.me/ti/p/@183sknuo"><button>開始推理</button></a>
+			</div>
+		</div>
+
+	</div>
+	
+</body>
+</html>
+
+

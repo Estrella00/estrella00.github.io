@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html>
+	<link rel="stylesheet" href="css/style.css"   type="text/css">
+
+
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<title>劇情向 line bot 推理遊戲 | 實習判官</title>
+	<meta content="冥界是所有亡魂都會來的世界，亡魂在這裡經過審判跟清理生前的債務之後，就會重
+	新投胎或前往其他世界。聖人有機會進入極x樂世界，大惡人會下地獄，小善小惡的一般人則會把生前記
+	憶跟遺憾解決之後，就重新投胎。" name="description">
+	
+	<meta content="實習判官 - 劇情向 LINEBOT 推理遊戲" property="og:title">
+	<meta content="冥界是所有亡魂都會來的世界，亡魂在這裡經過審判跟清理生前的債務之後，就會重新投胎或前往其他世界。聖人有機會進入極x樂世界，大惡
+	人會下地獄，小善小惡的一般人則會把生前記憶跟遺憾解決之後，就重新投胎。" property="og:description">
+	
+	</head>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script>
+//跳頁滾動
+        $(function()
+		{
+			$(".menu a").on('click',function(){
+				$("html, body").animate({
+					scrollTop: $($.attr(this,'href')).offset().top
+				},1500);
+			});
+
+			if(window.location.hash)
+			{
+				scroll(0,0);
+				setTimeout(function()
+				{
+					scroll(0,0);
+				},1);
+			}
+
+			if(window.location.hash)
+			{
+				$("html, body").animate({
+					scrollTop: $(window.location.hash).offset().top+'px'
+				},1500);
+			}
+		});
+
+//自身滾動
+		$(document).ready(function()
+		{
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) 
+		  {
+		
+			// Make sure this.hash has a value before overriding default behavior
+			if (this.hash !== "") 
+			{
+			  // Prevent default anchor click behavior
+			  event.preventDefault();
+		
+			  // Store hash
+			  var hash = this.hash;
+		
+			  // Using jQuery's animate() method to add smooth page scroll
+			  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			  $('html, body').animate(
+				  {
+				scrollTop: $(hash).offset().top
+				
+			  }, 800, function()
+			  {
+		   
+				// Add hash (#) to URL when done scrolling (default click behavior)
+				window.location.hash = hash;
+			  });
+			} // End if
+		  });
+		});
+		</script>
+<style>
+	/* .header
+{
+	display: flex;
+}
+nav
+{
+	width: 100%;
+	height: 100px;
+} */
+
+/* .title 
+{
+	padding: 0 20px; 
+ text-align: center; 
+} 
+
+
+.title  li
+{
+	list-style: none;
+	display: inline-block;
+	
+	line-height: 50px;
+}
+
+.title li a
+{
+	text-decoration:none;
+	color:#838383;
+	font-size: 12px;
+	outline:none;
+	padding: 0 20px;
+}
+
+.title  li a:hover
+{
+	color:black;
+} */
+.img_logo
+{
+	margin-left: 60px; 
+	margin-top: 10px;
+}
+
+.container 
+{
+  position: relative;
+  text-align: center;
+  
+ 
+}
+.centered {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered3 {
+	position: absolute;
+  top:  65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+button 
+{
+
+  color: white; 
+  width:120px;
+  height:40px;
+  border:none;
+  background-color:rgb(0,0,0);
+}
+
+.btn_start
+{
+
+	color: white; 
+	width:120px;
+	height:40px;
+	border:none;
+	background-color:rgb(0,0,0);
+	margin-top: 0px;
+}
+button:hover
+{
+	cursor:pointer;
+	background-color: rgb(37, 37, 37);
+	
+}
+
+.intro p
+{
+	font-size: 12px;
+	color: rgb(80, 79, 79);
+	text-align: center;
+	margin-top: 20px;
+	line-height: 24px;  
+	width: 1000px;
+	margin-left: 130px;
+	        
+    
+}
+
+.intro2 p
+{
+	font-size: 16px;
+	color: rgb(34, 33, 33);
+	text-align: center;
+	
+}
+.intro3
+{
+	width: 100%;
+	height: auto;
+}
+.intro3 p
+{
+	font-size: 12px;
+	color: rgb(80, 79, 79);
+	text-align: center;
+	margin-top: 100px;
+	
+	line-height: 24px;  
+	      
+    
+}
+.intro4 p
+{
+	font-size: 12px;
+	color: rgb(80, 79, 79);
+	text-align: center;
+	
+	line-height: 24px;          
+    
+
+}
+
+.cha1
+{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	
+}
+/* .cha1 .word
+{
+	margin-left: 50px;  
+	width: 350px; 
+} */
+
+
+.cha1 .label
+{
+	font-size: 12px; 
+	text-align: center; 
+	margin-top: 70px;
+}
+.cha1 .label2
+{
+	font-size: 36px;
+	text-align: left; 
+}
+.cha1 .label3
+{
+	color: rgb(66, 66, 66); 
+	line-height: 26px
+}
+
+.cha1 .btn_help
+{
+	margin-right: 15px;
+	
+}
+.cha2
+{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	
+}	
+
+.cha2 .word
+{
+	
+	width: 350px; 
+}
+
+
+.cha2 .label
+{
+	font-size: 12px; 
+	text-align: center; 
+	margin-top: 70px;
+}
+.cha2 .label2
+{
+	font-size: 36px;
+	text-align: left; 
+}
+.cha2 .label3
+{
+	color: rgb(66, 66, 66); 
+	line-height: 26px
+}
+
+.cha2 .btn_help
+{
+	margin-right: 15px;
+	
+}
+
+.cha3
+{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	
+}	
+
+.cha3 .word
+{
+	
+	width: 350px; 
+}
+
+
+.cha3 .label
+{
+	font-size: 12px; 
+	text-align: center; 
+	margin-top: 70px;
+}
+.cha3 .label2
+{
+	font-size: 36px;
+	text-align: left; 
+}
+.cha3 .label3
+{
+	color: rgb(66, 66, 66); 
+	line-height: 26px
+}
+
+.cha3 .btn_help
+{
+	margin-right: 15px;
+	
+}
+
+
+.step1 .step_num
+{
+	font-size: 12px; text-align: center; 
+	color: gray;
+}
+
+.step1 img
+{
+	max-width: 250px; 
+	height: auto;
+}
+
+.step_con
+{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	
+}
+.join
+{
+	
+	background-color: rgb(241, 239, 236);
+	width: 100%; height: auto;
+  margin: 100px auto 50px auto ;
+	
+}
+.join_con
+{
+	display:flex;
+	flex-direction: column;
+    height: 450px;
+	align-items: center;
+}
+.list ul li
+{
+	list-style:disc;
+	display:flex;
+	flex-direction: column;
+}
+.list li
+{
+	margin-top: 20px;
+	line-height: 30px;
+	font-size: 16px;
+}
+.faq
+{
+	margin-left: 50px;
+}
+
+.sponsor
+{
+	
+	background-color: rgb(241, 239, 236);
+	width: 100%; height: auto;
+  margin: 100px auto 50px auto ;
+	
+}
+.sponsor_con
+{
+	display:flex;
+	flex-direction: column;
+	height: 450px;
+	align-items: center;
+}
+
+.cha4
+{
+	display:flex;
+	flex-direction: row;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	
+}	
+.pic2
+{
+	width: 500px;
+
+}
+.pic3
+{
+	width: 300px;
+
+}
+.pic4
+{
+	width: 300px;
+
+}
+
+.centered
+{
+	 width: 550px; 
+	 height: 80px; 
+	 background-color: rgb(0,0,0,0.5); 
+	 color: white; 
+	 font-size: 40px; 
+}
+
+.centered2
+{
+	opacity:0.6; color: #fff; font-size: 20px;
+}
+
+.step1_p
+{
+	font-size: 16px;
+	width: 260px;
+	line-height: 24px;
+}
+
+.step2_p
+{
+	font-size: 16px;
+	width: 260px;
+	line-height: 24px;
+}
+
+.step3_p
+{
+	font-size: 16px;
+	width: 260px;
+	line-height: 24px;
+}
+
+
+
+@media only screen and (min-width: 321px) and (max-width: 768px) 
+{
+
+	.img_logo
+	{
+		margin-left: 5px; 
+		margin-top: 10px;
+	}
+		.centered
+	{
+		width: 200px; 
+		height: 30px; 
+		background-color: rgb(0,0,0,0.5); 
+		color: white; 
+		font-size: 20px; 
+	}
+
+	.centered2
+	{
+		opacity:0.6; color: #fff; font-size: 12px;
+	}
+
+	.btn_start
+	{
+
+		color: white; 
+		width:100px;
+		height:30px;
+		border:none;
+		background-color:rgb(0,0,0);
+		margin-top: 15px;
+	}
+
+	.intro p
+	{
+		font-size: 10px;
+		color: rgb(80, 79, 79);
+		text-align: center;
+		margin-top: 20px;
+		line-height: 24px;  
+		width:100%;
+		margin-left: 0px;
+				
+		
+	}
+
+	.intro2 
+	{
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+
+	.intro2 p
+	{
+		font-size: 13px;
+		
+	}
+
+	.cha1
+	{
+		display:flex;
+		flex-direction: column-reverse;
+		width: 100%;
+		height: auto;
+	}
+	.cha1 .word
+	{
+		/* position: relative; */
+		width: 100%;
+		height: auto;
+			/* background-color: greenyellow; */
+		
+	}
+
+
+	.cha1 .pic
+	{
+		position: relative;
+		width: 100%;
+		left: -50px;
+	}
+		.cha1 .label
+	{
+		font-size: 12px; 
+		text-align: center; 
+		margin-top: 70px;
+	}
+	.cha1 .label2
+	{
+		font-size: 36px;
+		text-align: center; 
+	}
+	.cha1 .label3
+	{
+		text-align: center; 
+		color: rgb(66, 66, 66); 
+		line-height: 26px
+	}
+	.cha1 a button
+	{
+		margin: 20px;
+	
+	}
+		.cha1 .btn_help
+	{
+		margin-left: 40px;
+		/**/
+	}
+
+
+	.cha2
+	{
+		display:flex;
+		flex-direction: column;
+	}
+	.cha2 .word
+	{
+		position: relative;
+		width: 100%;
+		height: auto;
+		/* background-color: greenyellow; */
+		/* left: 100px; */
+	}
+	.cha2 .pic
+	{
+		position: relative;
+		width: 100%;
+		/* left: 20px; */
+	}
+		.cha2 .label
+	{
+		font-size: 12px; 
+		text-align: center; 
+		margin-top: 70px;
+	}
+	.cha2 .label2
+	{
+		font-size: 36px;
+		text-align: center; 
+	}
+	.cha2 .label3
+	{
+		text-align: center; 
+		color: rgb(66, 66, 66); 
+		line-height: 26px
+	}
+	.cha2 a button
+	{
+		margin: 20px;
+	
+	}
+		.cha2 .btn_help
+	{
+		margin-left: 40px;
+		
+	}
+
+
+	.cha3
+	{
+		display:flex;
+		flex-direction: column-reverse;
+	}
+	.cha3 .word
+	{
+		position: relative;
+		width: 100%;
+		height: auto;
+		/* background-color: greenyellow; */
+		/* left: 100px; */
+	}
+	.cha3 .pic
+	{
+		position: relative;
+		width: 100%;
+		left: -110px;
+	}
+		.cha3 .label
+	{
+		font-size: 12px; 
+		text-align: center; 
+		margin-top: 70px;
+	}
+	.cha3 .label2
+	{
+		font-size: 36px;
+		text-align: center; 
+	}
+	.cha3 .label3
+	{
+		text-align: center; 
+		color: rgb(66, 66, 66); 
+		line-height: 26px
+	}
+	.cha3 a button
+	{
+		margin: 20px;
+	
+	}
+		.cha3 .btn_help
+	{
+		margin-left: 40px;
+		
+	}
+
+		/* .intro3 p
+	{
+		font-size: 12px;
+		color: rgb(80, 79, 79);
+		/* text-align: center; 
+		margin-top: 100px;
+		margin-left: 50px;
+		line-height: 24px;  
+		width: 500px;        
+		
+	} */
+
+	.step1_p
+	{
+		font-size: 12px;
+		width: 100px;
+		line-height: 24px;
+		text-align: center;
+	}
+
+	.step2_p
+	{
+		font-size: 12px;
+		width: 100px;
+		line-height: 24px;
+		text-align: center;
+	}
+
+	.step3_p
+	{
+		font-size: 12px;
+		width: 100px;
+		line-height: 24px;
+		text-align: center;
+	}
+
+	.step1
+	{
+		
+		width: 120px;
+		margin-left: 10px;
+	}
+	.step2
+	{
+	
+		width: 120px;
+	}
+	.step3
+	{
+		
+		width: 120px;
+	}
+
+		.step1 img
+	{
+		max-width: 100px; 
+		height: auto;
+	}
+
+	.step2 img
+	{
+		max-width: 100px; 
+		height: auto;
+	}
+
+	.step3 img
+	{
+		max-width: 100px; 
+		height: auto;
+	}
+
+	.pic2
+	{
+		width: 300px;
+	
+
+	}
+
+	.pic3
+	{
+		width: 300px;
+
+	}
+
+	.faq 
+	{
+    margin-left: 5px;
+     }
+	.pic4
+	{
+		width: 300px;
+
+	}
+	.cha4
+	{
+		display: flex;
+		flex-direction: column;
+		margin-left:-35px;
+	}
+
+}
+
+</style>
+<!--  -->
+
+<body>
+
+	<nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<img class="fas fa-bars" src="image/check.png" width="20px">
+			<!-- <i class="fas fa-bars"></i> -->
+		</label>
+		<a href="index.html"><img class="img_logo" src="image/實習判官logo.png"  width="108" sizes="108px"></a>
+	    <ul>
+			<li><a href="article.html">看劇本</a></li>
+			<li><a href="#gorole">判官介紹</a></li>
+			<li><a href="#gostep">遊戲流程</a></li>
+			<li><a href="#gojoin">開始推理</a></li>
+			<li><a href="#gofaq">FAQ</a></li>
+			<li><a href="#gospon">贊助我們</a></li>
+			<li><a href="#gofb">FB 社團</a></li>
+			<li><a href="#gofb">聯絡我們</a></li>
+		</ul>
+	</nav>
+	
+	
+	
+	<!-- <div class="header">
+		<a href="index.html"><img src="image/實習判官logo.png" style="margin-left: 60px; margin-top: 10px;" width="108" sizes="108px"></a>
+		<nav>
+		
+		<ul class="title">
+			<li><a href="article.html">看劇本</a></li>
+			<li><a href="#gorole">判官介紹</a></li>
+			<li><a href="#gostep">遊戲流程</a></li>
+			<li><a href="#gojoin">開始推理</a></li>
+			<li><a href="#gofaq">FAQ</a></li>
+			<li><a href="#gospon">贊助我們</a></li>
+			<li><a href="#gofb">FB 社團</a></li>
+			<li><a href="#gofb">聯絡我們</a></li>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			  </a>
+			
+		</ul>
+	    
+		</nav>
+				
+	</div> -->
+
+	<div class="container">
+
+		<img  src="image/10.jpg" style="max-width: 100%; height: auto;" >
+		<div class="centered" >
+			<p style=" top: -20px; text-align: center; position: relative;">實習判官</p>
+		</div>
+
+		<div class="centered2" >劇情 line bot 推理遊戲<br></div>
+	
+			<div class="centered3"><a href="https://line.me/ti/p/@183sknuo">
+			 <button class="btn_start">開始推理</button></a>
+			</div>
+	
+	</div>
+
+	<div class="intro">
+		<p class="intro_p">冥界是所有亡魂都會來的世界，亡魂在這裡經過審判跟清理生前的債務之後，就會重新投胎或前往其他世界。
+			好人有機會進入極樂世界，壞人會下地獄，小善小惡的一般人則會把生前記憶跟遺憾解決之後，就重新投胎。</p>
+		
+			
+	</div>	
+
+	<div class="intro2">
+
+		<p class="four" style="margin-top: 50px; font-size: 37px; color: #000;">四大特色</p>
+			
+	        <p>不用下載任何 App，創建 Line 群組即可開始推理 🎮</p>
+			<p>多人協力推理，難解的懸案不再一個人面對 🔍</p>
+			<p>MIT 台灣自製劇本，各種意想不到的情節讓你腦洞大開 🤯</p>
+			<p>獨創冥界世界觀，三位判官的故事等你來發掘 💫</p>
+	</div>
+</br></br>
+<hr style="border-top: 0.5px solid #bbb;">
+
+<!-- 第二區-->
+</br></br></br>
+
+<div class="cha1" id="gorole">
+	
+		<div class="word" >
+			<div class="label" >擅於觀察人際互動</div>
+			<h2 class="label2" >聽風判官 冥鏡</h2>
+			<p class="label3">「這種簡單的小情報，花兩分鐘就調查出來了，剩下的就交給你囉。」</p>
+		</br>
+			<a href="https://line.me/ti/p/@183sknuo" >
+				<button class="btn_help" >協助他破案</button></a>
+		
+			<a href="mingjing.html" ><button>判官介紹</button></a>
+		</div>
+
+		<div class="pic" style="margin-left: 60px; ">
+			<img src="image/冥鏡.png" style="max-width: 100%; height: auto;" >	
+		</div>
+</div>
+
+
+<div class="cha2" style="margin-top: 80px; " >
+	
+	
+	<div class="pic" style="margin-right: 120px;">
+		<img src="image/魅嵐.png" style="max-width: 100%; height: auto;" > 	
+	</div>
+
+	<div class="word" >
+		<div class="label" >仔細觀察生活中大小事</div>
+		<h2 class="label2" >察微判官 魅嵐</h2>
+		<p class="label3" >「我喜歡把證物按照字首筆劃排序，你說我很奇怪？你們這些不重視秩序的人才怪吧。」</p>
+	</br>
+		<a href="https://line.me/ti/p/@183sknuo" >
+			<button class="btn_help" >協助她破案</button></a>
+	
+		<a href="meilan.html" ><button>判官介紹</button></a>
+	</div>
+</div>
+
+
+<div class="cha3" style="margin-top: 80px;">
+	
+	<div class="word" >
+		<div class="label" >經常對靈魂自言自語</div>
+		<h2 class="label2" >讀夢判官 靈陽</h2>
+		<p class="label3" >「石獅寺有四十四隻石獅子，四十四隻石獅子吃四十四枝芋仔冰芋仔冰好好吃我也好想吃喔端湯上塔？」</p>
+	</br>
+		<a href="https://line.me/ti/p/@183sknuo" >
+			<button class="btn_help" style="margin-right: 10px;">協助他破案</button></a>
+	
+		<a href="linyang.html" ><button>判官介紹</button></a>
+	</div>
+
+	<div class="pic" style="margin-left: 120px; ">
+		<img src="image/靈陽.png" style="max-width: 100%; height: auto;" >	
+	</div>
+</div>
+
+
+<div class="intro3" ><p>20世紀人口膨脹，冥界也陷入鬼口膨脹的危機，裝不下那麼多鬼魂的冥界現在只追求效率，把亡魂快速投胎送回陽間。這導致原本有強力審判功能的十殿閻羅，變成了戶政事務所或
+	移民署一般的行政機關。</br>現在的閻王們只負責快速審理亡魂是否適合投胎，不再處理它們的生前事務。</p>
+</div>
+</br>
+<hr style="border-top: 0.5px solid #bbb;">
+
+<!-- 第三區-->
+
+<div class="step" id="gostep">
+	<h2 style="font-size: 36px; margin-top: 80px; text-align: center;">三個步驟開始推理</h2>
+	
+	<div class="step_con">
+
+		<div class="step1" >
+			<p class="step_num" >步驟一</p>
+			<h4 style="font-size: 24px;">挑選案件</h4>
+			<img src="image/step1.jpg">
+			<p class="step1_p" >首先創建 line 群組，邀請實習判官官方帳號加入之後，邀請其他朋友加入後挑選案件</p>
+
+		</div>
+
+		<div class="step2" >
+			<p style="font-size: 12px;text-align: center;color: gray;">步驟二</p>
+			<h4 style="font-size: 24px;">案件推理</h4>
+			<img src="image/step2.jpg" style="width: 250px; height: auto;">
+			<p class="step2_p">發揮判官的超能力以獲取線索，注意關係人與證物間可能的連結，一步一步抽絲剝繭揭開案件全貌</p>
+
+		</div>
+
+		<div class="step3">
+			<p style="font-size: 12px;text-align: center;color: gray;">步驟三</p>
+			<h4 style="font-size: 24px;">回答問題</h4>
+			<img src="image/step3.jpg" style="width: 250px; height: auto;">
+			<p class="step3_p">告訴小閻王你們認為的真相，重啟案件還被害者一個公道</p>
+		</div>
+
+	</div>
+
+</div>
+
+<!-- 第四區-->
+</br>
+<div class="join" id="gojoin" >
+	<div class="join_con">
+	<p style="font-size: 36px;">現在加入</p>
+	<img src="image/qr.png" width="220px"></br></br>
+	<a href="https://line.me/ti/p/@183sknuo"><button>開始推理</button></a>
+	</div>
+</div>
+<div class="intro4">
+	<p>
+	不少亡魂帶著遺憾來到冥界，結果完全沒有得到任何清理就要投胎回陽間了，它們的遺憾會製造大量負能量。亡魂身上的負能量會造成兩種負面效應：一是讓冥界充滿負能量，結果冥界變熱；二是帶著遺憾跟怨恨
+	的亡魂沒有想通就投胎，會把這些傷痕帶到下一世人生，造成陽間更多問題。充滿負能量的亡魂投胎也要消耗比較多的孟婆湯，害孟婆抱怨連連。</p></div>
+
+	</br>
+	<hr style="border-top: 0.5px solid #bbb;">
+
+<!-- 第五區-->
+</br>
+
+<div class="faq" id="gofaq">
+
+	<p style=" text-align: center; font-size: 40px;">ＦＡＱ</p>
+
+	<ul class="list" style="list-style-type:disc">
+		<li>Q: 實習判官是什麼？<br>A: 實習判官是一個基於 LINE 應用程式的劇情向 LINEBOT&nbsp;推理遊戲。</li>
+		<li>Q: 實習判官適合幾個人一起玩？<br>A: 最佳體驗人數為 3 至 6 人。</li>
+		<li>Q: 邊緣人可以自己一個玩嗎？<br>A: 可以喔，你只需要創立群組並邀請實習判官加入就可以開始破案。</li>
+		<li>Q: 實習判官要全部人在一個空間才能玩嗎？<br>A: 如果沒辦法集合所有人也沒關係，建議可以發起 Line 群組電話討論劇情。</li>
+		<li>Q: 實習判官的遊戲目的？<br>A: 玩家將在遊戲中擔任三位判官的小助手，找到關鍵線索、推理討論最後偵破案件。</li>
+		<li>Q: 實習判官遊戲該如何進行？<br>A: 請先仔細閱讀小閻王的訊息，觀看阿鬼的跑馬燈，接著向三位判官尋求線索。</li>
+		<li>Q: 推理到一半卡關了怎麼辦？<br>A: 請去找石獅，那邊有豐富的提示。</li>
+		<li>Q: 任務明明解完了，也顯示案件破解，可是卻無法玩新案件？<br>A: 請至功能選單 -&gt; 卷宗藏經閣 -&gt;&nbsp;更換劇本。</li>
+		<li>Q: 實習判官會持續推出新劇本嗎？<br>A: 我們會不定期推出精彩的劇本，盡請期待！</li>
+		<li>Q: 實習判官適合什麼樣的人玩？<br>A: 對推理有興趣，喜歡跟朋友一起合作的人，上班上課族空檔想要小小放鬆或是單純想要打發時間的人都可以玩。</li>
+		<li>Q: 我把實習判官加入群組，一段時間了都沒反應是為什麼？<br>A: 請幫我檢查群組是否已經有其他官方帳號，目前一個 群組只能有一個官方帳號，請先幫我把舊帳號暫時移出群組，並再邀請一次實習判官。</li>
+		<li>Q: 我想要贊助實習判官該怎麼做？<br>A: 下面有贊助我們的連結，歡迎贊助，讓我們做的更好。</li>
+	</ul>
+</div>
+
+<!-- 第六區-->
+
+<div class="sponsor" id="gospon" >
+	<div class="sponsor_con">
+	<p style="font-size: 36px;">贊助我們</p>
+	<img src="image/spon_qr.png" width="220px"></br></br>
+	<a href="https://payment.ecpay.com.tw/QuickCollect/PayData?OB39U6tsvySA4R4lL0NnQYg%2fgxwW1z0MVGChU3Oe%2fXM%3d"><button>讓我們做得更好</button></a>
+	</div>
+</div>
+
+<div class="cha4" style=" margin-top: 80px; " id="gofb" >
+	
+	
+	<div class="pic" style="margin-left: 70px;">
+		<img class="pic2" src="image/小閻王.png" >	
+	</div>
+
+	<div class="word" style="margin-left: 50px; ">
+		<p>想了解更多實習判官的內容？<br>想第一手收到實習判官的最新資訊？<br>現在加入我們的 FB 社團！</p>
+		<a style="cursor: pointer;" href="https://www.facebook.com/groups/869608936785909" target="_blank"><img class="pic3" src="image/share.png" width="300px"></a></br>
+		<img class="pic4" src="image/實習判官logo.png" width="250px">
+	</br>
+	</div>
+</div>
+
+<div style="line-height: 25px; font-size: 12px; text-align: center; margin:40px auto 150px auto;"><strong>合作請來信</strong><br>JUDICIALINTERN0419@gmail.com<br></div>
+
+</body>
+</html>
+
+

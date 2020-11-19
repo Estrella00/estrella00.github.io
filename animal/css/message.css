@@ -1,0 +1,237 @@
+body{
+	margin:0;
+	background:url(../images/bg-body1.jpg);
+      font-family: "Microsoft JhengHei" ;
+}
+/*------------------------- Header ------------------------*/
+.header{
+	
+	padding: 0 0 2px;
+}
+.header div{
+	width:940px;
+	padding:0 10px;
+	margin:0 auto;
+}
+.header div a#logo{
+	text-align:center;
+	display:block;
+	width:480px;
+	height:118px;
+	/*margin:98px auto 40px;*/
+    margin:0px auto 20px;
+    padding: 5px;
+}
+.header div a#logo img{
+	border:0;
+}
+.header div ul{
+	list-style:none;
+	margin:0;
+	padding:0 12px;
+	overflow:hidden;
+}
+.header div ul li:first-child{
+	margin:0;
+}
+.header div ul li.selected{
+	background:url(../images/bg-menu-selected1.jpg) repeat-x;
+}
+.header div ul li{
+	float:left;
+	margin:0 0 0 0 41px;
+	text-align: center;
+	width:150px;
+	height:59px;
+        
+}
+.header div ul li a:hover{
+	color:#FFA500;
+}
+.header div ul li a{
+	text-decoration:none;
+	color:#fff;
+	
+	font-size: 28px;
+	display: block;
+
+	margin: 15px 0 0;
+	text-transform:uppercase;
+	line-height:36px;
+	outline:none;
+}
+.dropdown-content
+{
+    display: none;/*把一個物件完全的隱藏*/
+    position:absolute;/**/
+    background:url(../images/bg-body1.jpg);
+    min-width: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 200px;
+    padding: 2px;
+  }
+
+
+  /*下拉後a的樣式*/
+  .dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  /*下拉後a被hover的樣式*/
+  .dropdown-content a:hover{
+    background: 
+        
+      linear-gradient(90deg,rgba(154 ,205 ,50,.2) 50%,transparent 50%),
+      linear-gradient(rgba(255, 69, 0,.2) 50%,transparent 50%);
+      background-size: 20px 20px;
+      color:#FFA500;
+      font-weight:bold;
+     
+  }
+.dropdown:hover .dropdown-content{
+    display: block;
+  }
+        
+.dropdown-content
+{
+    display: none;/*把一個物件完全的隱藏*/
+    position:absolute;/**/
+    background:url(../images/bg-body1.jpg);
+    min-width: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 200px;
+    padding: 2px;
+  }
+
+
+  /*下拉後a的樣式*/
+  .dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  /*下拉後a被hover的樣式*/
+  .dropdown-content a:hover{
+    background: 
+        
+     /* linear-gradient(90deg,rgba(154 ,205 ,50,.2) 50%,transparent 50%),*/
+      linear-gradient(rgba(124, 205, 124,.2) 50%,transparent 50%);
+      background-size: 20px 20px;
+      color:#FFA500;
+      font-weight:bold;
+     
+  }
+.dropdown:hover .dropdown-content{
+    display: inline-block;
+  }
+/*------------------------- Content ------------------------*/
+.content{
+	background:url(../images/bg-body1.jpg);
+}
+/*.content div{
+	width:1040px;
+ height: 500px;
+    height: auto;
+	padding:0 10px;
+	margin:0 auto;
+}*/
+.wholeform{
+   
+    border-style: dashed;
+    border-width: 3px;
+    border-color:goldenrod;
+    width: 460px;
+   margin:10px 355px;
+    padding: 20px 50px;
+    background-color: #668800;
+    height: 350px;
+}
+.title{
+    float: left;
+    width:150px;
+    clear: left;
+    margin:6; 
+    
+}
+.bigtitle{
+    text-align: center;
+    font-size: 36px;
+    padding-top: 60px;
+    color: #FFBB00;
+    
+   
+}
+fieldset{
+    width: 310px;
+    margin-top: 20px;
+    border:1px solid #d6d6d6;
+    background-color: ;
+    line-height: :1.6em;
+ 
+    
+}
+input[type="text"]{
+   
+    border:2px solid;
+    padding: 2px;
+    outline: none;
+    margin: 6;
+    border-radius:2px;
+    border-color: #FFCC22;
+    font-family: "Microsoft JhengHei";
+}
+
+.title2{
+    float: left;
+    width:150px;
+    clear: left;
+    margin-left:6; 
+    
+}
+input[type="radio"]{ margin-left:13; 
+}
+.radio{padding-top: 6;
+    padding-left: 165;
+    width: 700;
+}
+div.botton{
+  
+    width:70px;
+    height: 20px;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+   
+    /*background-color:rgba(60,255,4,0.2);*/
+    background-color:#FFCC22;
+    margin-left: 78%;
+    margin-top: 30px;
+    color: black;
+    border-width:3px;
+}
+div.botton:hover{
+
+    width:70px;
+    height: 20px;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+  
+    background-color:goldenrod ;
+    font-family: ;
+    margin-top: 30px;
+    color:white;
+}
+textarea {
+  resize : none;
+    
+    
+
+}

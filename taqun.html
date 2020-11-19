@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<link rel="stylesheet" href="css/style.css"   type="text/css">
+	<title>他群-服務頁面</title>
+	<meta charset="utf-8">
+</head>
+
+<style>
+
+	*{
+		font-family: "微軟正黑體";
+	}	
+	body
+	{
+		background-color:rgb(29, 35, 53);
+	}
+
+	.img_logo
+	{
+		width: 170px;
+		margin: 20px;
+		
+	}
+	.main
+	{
+		
+		background-color:rgb(29, 35, 53);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+
+    .idea
+    {
+    	background-color:  #f1f5f5;
+    	border-radius: 50px;
+		padding: 10px;
+		text-align: center;
+		width:65%;
+		margin: 50px;
+		color: rgb(52, 53, 53);
+		border: 5px solid rgb(196, 190, 190);
+    }
+    .idea p
+    {
+		font-size: 20px;
+		line-height:30px;
+    }
+    .idea h2
+    {
+    	font-size: 24px;
+    
+    }
+	
+    .show
+    {
+    	background-color:  #f1f5f5;
+    	border-radius: 50px;
+    	padding: 20px;
+		width: 60%;
+		margin: 30px;
+		text-align: center;
+		border: 5px solid rgb(196, 190, 190);
+
+    }
+    .show2
+    {
+    	background-color: #f1f5f5;
+    	border-radius: 50px;
+    	padding: 20px;
+		width: 60%;
+		margin: 30px;
+		text-align: center;
+		border: 5px solid rgb(196, 190, 190);
+
+    }
+	.show_img
+	{
+		width: 80%;
+		/* opacity: 0.85; */
+		border-radius: 60px;
+	}
+
+	/* .show_img:hover
+	{
+		width: 700px;
+		opacity: 1;
+	} */
+
+	.show a:hover
+	{
+		cursor: pointer;
+		
+	}
+	
+	.show:hover
+	{
+		border: 5px solid rgb(231, 170, 38);
+		cursor: pointer;
+	}
+		
+	.mark
+	{
+		position: absolute; 
+		top:75%;
+		left:10%;
+		height: 220px;
+
+	}
+
+	.v
+	{
+		width: 30%;
+		margin-bottom: 20px;
+	}
+	@media only screen and (min-width: 321px) and (max-width: 768px) 
+{
+
+	
+	.idea p
+    {
+		font-size: 16px;
+    }
+    .idea h2
+    {
+    	font-size: 18px;
+    
+	}
+	
+	.mark
+	{
+		position: absolute; 
+		top:75%;
+		left:8%;
+		height: 160px;
+
+	}
+}
+
+
+	</style>
+
+<body>
+
+<nav style="background-color: rgb(29, 35, 53)">
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<img class="fas fa-bars" src="image/check.png" >
+			<!-- <i class="fas fa-bars"></i> -->
+		</label>
+		<a href="index.html"><img class="img_logo" src="image/logo.png"></a>
+	    <ul>
+			<li><a href="about.html">關於我</a></li>
+			<li><a href="works.html">作品</a></li>
+			<li><a href="photos.html">攝影</a></li>
+		</ul>
+</nav>
+
+
+<img class="mark" src="image/mark2.png">
+
+<div class="main">
+	<h1 style="color:rgb(236, 236, 236) ; font-size: 25px; margin-top: 50px;">他群-服務頁面</h1>
+	<div class="idea">
+		<h2>介紹</h2>
+		<p>負責調整細微網頁版面、撰寫服務頁面以及服務頁面的RWD製作。</p>
+	</div>
+
+	<div class="show">
+		<a href="https://taqunworkshop.com/#/service" target="_blank"><img class="show_img" src="image/taqun.png"  ></a>
+	
+	</div>
+
+</div>
+
+</body>
+</html>

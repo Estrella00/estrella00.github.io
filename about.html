@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>洪宛鈴 Estrella</title>
+	<link rel="stylesheet" href="css/style.css"   type="text/css">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<meta charset="utf-8">
+
+
+</head>
+
+<style>
+
+	*{
+		
+		font-family: "微軟正黑體";
+		/*text-align: center;*/
+	}
+	body
+	{
+		background-color:rgb(29, 35, 53);
+	}
+
+	.img_logo
+	{
+		width: 170px;
+		margin: 20px;
+		
+	}
+	.img_me
+	{
+		width: 270px;
+		margin: 10px;
+	}
+	.area1
+	{
+		margin-top: 80px;
+		background-color: rgb(29, 35, 53);
+		display: flex;
+		flex-direction: row;
+		justify-content:space-evenly;
+	}
+
+	.area1
+	{
+		margin-top: 80px;
+		background-color: rgb(29, 35, 53);
+		
+	}
+
+	.area2
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+
+
+	.mainword
+	{
+		margin-top: 20px;
+		width: 680px;
+		color: white;
+	}
+	.intro
+	{
+		
+		display: flex;
+		flex-direction: row;
+		height: 200px;
+	}
+	
+	.intro2
+	{
+		
+		display: flex;
+		flex-direction: row;
+		height: 200px;
+	}
+	
+	.intro3
+	{
+		text-align: center; 
+		background-color: rgb(56, 63, 83); 
+		border-radius: 50px;
+		padding: 10px; 
+		margin-bottom: 20px;
+		width: 350px;
+		color: rgb(227, 229, 233);
+		line-height: 30px;
+	}
+
+/* 浮出視窗 */
+.button {
+  font-size: 15px;
+  padding: 5px;
+  color: #fff;
+  /* border: 2px solid #386292; */
+  border-radius: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  margin: 15px;
+  line-height: 30px;
+}
+.button:hover {
+ color: #72a7e4;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: rgb(66, 75, 100);
+  border-radius: 5px;
+  width: 45%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color:#d4963e;
+  font-family: Tahoma, Arial, sans-serif;
+  
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color:  #72a7e4;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+.content h3 
+{
+	color:rgb(2, 13, 49);
+}
+.content 
+{
+	color:rgb(222, 222, 226);
+	font-size: 15px;
+}
+
+
+
+@media only screen and (min-width: 321px) and (max-width: 768px) 
+{
+	.area1
+	{
+		margin-top: 80px;
+		background-color: rgb(29, 35, 53);
+		display: flex;
+		flex-direction: column;
+		justify-content:flex-start;
+		margin-bottom: 20px;
+	}
+	.area2
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.intro2
+	{
+		
+		display: flex;
+		flex-direction: row;
+		height: 300px;
+		padding-bottom: 20px;
+	}
+	.popup {
+		margin: 50px auto;
+		padding: 20px;
+		background: rgb(66, 75, 100);
+		border-radius: 5px;
+		width: 70%;
+		position: relative;
+		transition: all 5s ease-in-out;
+	}
+}
+
+</style>
+
+
+<body>
+
+<nav style="background-color: rgb(29, 35, 53)">
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<img class="fas fa-bars" src="image/check.png" >
+			<!-- <i class="fas fa-bars"></i> -->
+		</label>
+		<a href="index.html"><img class="img_logo" src="image/logo.png"></a>
+	    <ul>
+			<li><a href="about.html">關於我</a></li>
+			<li><a href="works.html">作品</a></li>
+			<li><a href="photos.html">攝影</a></li>
+		</ul>
+</nav>
+
+
+
+<div class="area1">
+	<div style="text-align: center; background-color: rgb(56, 63, 83); border-radius: 50px;padding: 60px; margin-bottom: 20px;" >
+		<img class="img_me"src="image/me2.png">
+		<h3 style="color:rgb(252, 238, 232); font-weight: normal;margin: 15px; ">洪宛鈴</br>Wan Ling Hong </h3>
+		<p  style="color:rgb(252, 238, 232); line-height: 28px;margin: 15px;">1997/12/05</br>臺灣 桃園人</p>
+		<p  style="color:rgb(252, 238, 232); line-height: 28px;">元智大學 資訊傳播學系</br>大園國際高中 西班牙文組</p>
+		<p  style="color:rgb(252, 238, 232); line-height: 28px;margin: 15px;">e-mail : sunnyforest00@gmail.com</sunnyforest00@gmail></p>
+		
+	</div>
+	
+	<div style="display: flex;
+				height: 600px;
+				flex-direction:column;
+				background-color: rgb(56, 63, 83); 
+				border-radius: 50px; 
+				padding: 30px;
+				justify-content:flex-start;">
+		<div class="intro">	
+			<div>
+			<h4  style="color:#c98930; font-size: 20px;margin: 15px;">語言</h4>
+			<p  style="color:rgb(252, 238, 232); line-height: 28px;margin: 15px;">中文</br>英文(GEPT 中級、TOEIC 650分)</br>西班牙文(SFLPT A1)</p>
+			</div>
+
+			<div>
+				<h4  style="color:#c98930; font-size: 20px;margin: 15px;">技能</h4>
+				<p  style="color:rgb(252, 238, 232); line-height: 28px;margin: 15px;">Adobe Photoshop、Illustrator</br>Adobe Premiere</br>HTML、CSS、JavaScript、jQuery</br>php、Arduino</p>
+				</div>
+		</div>
+		<!-- <a class="button" href="#popup1">Let me Pop up</a> -->
+		<div class="intro2">	
+			<div>
+			<h4  style="color:#c98930; font-size: 20px;margin: 15px;">經驗</h4>
+			<h5 style="color:#c98930; position: relative;top: -40px;left: 60px; margin-bottom: -25px;">(點入有詳細介紹)</h5>
+			<a class="button" href="#popup1">2020 畢業製作入圍放視大賞</a></br>
+			<a class="button" href="#popup2">2019 淇奧友善股份有限公司</br>&emsp; &emsp; &emsp;&ensp;暑期實習生(程式組)</a></br>
+			<a class="button" href="#popup6">&emsp; &ensp; &ensp; 三校課程成果展</a></br>
+			<a class="button" href="#popup3">2018 參加XR開發者黑客松大賽</a></br>
+			<a class="button" href="#popup4">2017 桃園電影節志工</br>&emsp; &emsp; &emsp;&ensp;麥當勞工讀生</a></br>
+			<a class="button" href="#popup5">2016 參加Youth青年志工大聯盟</br>&emsp; &emsp; &emsp;&ensp;擔任社團團遊的活動長</br>&emsp; &emsp; &emsp;&ensp;擔任社團送舊美宣長</a>
+			
+			</div>
+
+			<div>
+				<h4  style="color:#c98930; font-size: 20px;margin: 15px;">興趣</h4>
+				<p  style="color:rgb(252, 238, 232); line-height: 28px;margin: 15px;">攝影、聽音樂、彈鋼琴、組樂高</br>拼圖、騎怎踏車、登山</p>
+				</div>
+		</div>
+	</div>
+	
+</div>
+
+<!-- 詳細經驗 -->
+<div id="popup1" class="overlay">
+	<div class="popup">
+		<h2>2020</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			<h3 style="margin:20px 0 10px 0;">畢業製作入圍放視大賞</h3>
+			大四畢業製作專題的互動裝置 [ 初生 ]，入圍了放視大賞，在畢業製作裡學習到了團體合作，溝通協調。
+		</div>
+	</div>
+</div>
+
+<div id="popup2" class="overlay">
+	<div class="popup">
+		<h2>2019</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			<h3 style="margin:0px 0 10px 0;">淇奧友善股份有限公司暑期程式組實習生</h3>
+			工作內容：製作濾鏡特效、協助佈置展場、程式設計、企劃發想
+			<h4 style=" background-color: rgb(222, 222, 226); color: black;
+			 border-radius: 10px; width: 70px; height: 20px; margin-bottom: 7px;">濾鏡特效</h4>
+			 在實習第一個月的時候製作了Spark AR Studio濾鏡特效，和我的實習夥伴兩個人一起從完全不知道這個軟體開始研究、找資料，到最後成功做出特效，覺得很有成就感，這也是在公司完成的第一個作品。
+
+			 <h4 style=" background-color: rgb(222, 222, 226); color: black;
+			 border-radius: 10px; width: 140px; height: 20px; margin-bottom: 7px;">展場活動、記者會</h4>
+			 實習的兩個月中公司有接到展場的案子，所以有機會可以跟著同事們去展場看看、一起佈置展場，我們負責把展板都擺好、掛好固定位置、裝飾周圍環境。</br>
+			 這次展場都有記者會，記者會是以前沒有機會可以接觸到的特別體驗。</br>
+			</br>在網頁程式製作過程中也遇到好幾次瓶頸發現自己的不足、還有很大進步的空間需要去補足，每次遇到瓶頸時我都會想辦法解決，不管是尋找資料或者是詢問人，當成功度過這些就表示有慢慢成長，實習過程中就是要多做多學多嘗試，不要害怕詢問，因為問到學會了才會進步成長。　
+			</br>實習兩個月中真的開拓視野，也是一個很好的機會讓自己在真正進入職場前好好檢視自己所學與不足，同時也能學習到與人的相處、處理事情的態度，認真努力去看待，真的會收穫滿滿。
+			
+			
+		</div>
+	</div>
+</div>
+
+<div id="popup6" class="overlay">
+	<div class="popup">
+		<h2>2018</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			<h3 style="margin:20px 0 10px 0;">三校課程成果展(2019.01.12)</h3>
+			由於穿戴式科技設計課程，參加了與銘傳大學和輔仁大學一起舉辦的成果展，我們這組的作品為貼心包包，獲得了最佳人氣獎。
+			
+		</div>
+	</div>
+</div>
+
+
+
+<div id="popup3" class="overlay">
+	<div class="popup">
+		<h2>2018</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			<h3 style="margin:20px 0 10px 0;">參加第三屆XR開發者黑客松大賽</h3>
+			第一次參加黑客松所舉辦的競賽，我在團隊裡擔任企劃發想、建製模型以及想遊戲故事的工作，很開心有參加這次的競賽，在三天內和團隊一起把遊戲從有到無呈現出來，不只挑戰自己也考驗團隊的合作，多虧這個競賽，讓我拓展視野。
+			
+		</div>
+	</div>
+</div>
+
+<div id="popup4" class="overlay">
+	<div class="popup">
+		<h2>2017</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			<h3 style="margin:20px 0 10px 0;">桃園電影節志工</h3>
+			擔任場務組，負責為民眾介紹電影節，以及協助電影節動線順暢，在電影開始前要和民眾宣導電影撥放時的注意事項，還有負責遞麥克風給導演，這是個很特別的經歷。
+			
+			<h3 style="margin:20px 0 10px 0;">麥當勞</h3>
+			當初選擇麥當勞是因為先一步體驗職場上的辛勞，並且我想從中進行社會觀察，我在麥當勞裡負責櫃台點餐，站在第一線，身為點餐員其實有更多機會與各式各樣客人接觸，以及口術促銷的專業性，推銷新出的產品，面帶微笑回答客人的提問，遇到一些問題時也要馬上臨場反應回答。
+		</div>
+	</div>
+</div>
+
+<div id="popup5" class="overlay">
+	<div class="popup">
+		<h2>2017</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			<h3 style="margin:20px 0 10px 0;">YOUTH青年志工大聯盟</h3>
+			這是社團那麼多屆以來第一次舉辦社團旅遊的活動，我擔任活動長，負責規劃行程，找景點場刊以及發想遊戲，經歷了這次活動，發覺策畫活動是需要團隊合作以及彼此溝通協調才能完成，途中發生一些小狀況，也要靠臨場反應去解決。
+		
+		</div>
+	</div>
+</div>
+
+
+
+<div class="area2">
+	<div class="intro3">
+		<p>您好，我是洪宛鈴，來自桃園</br>畢業於元智大學資訊傳播學系科技組</br>當初高中學了三年的西班牙文，之後在選擇系所時，隨著網際網路、人工智慧與機器人的快速發展，覺得未來趨勢會是在資訊科技領域，本身也對傳播方面有興趣，所以選擇了這個科系。</p>
+	</br></br><img src="image/Q.png" style="width: 150px;">
+	</div>
+
+	<div class="intro3">
+		<p>我的個性沉穩、外向、努力</br>態度積極主動、責任心強、反應力快</br>有獨立學習能力，具有團隊溝通、合作的能力。</br></br>
+			在軟體應用上，能夠流暢地使用Illustrator、PhotoShop、Premiere、Arduino</br>及Office等軟體。</br>網頁程式上能夠使用CSS、HTML</br>JavaScript、jQuery、php</br>大學裡不只學到軟體技術、程式設計、網頁撰寫、互動裝置的能力，學習態度也進步許多。</br></br>由於學的東西很廣泛</br>因此我認為自主學習非常重要，自己要想辦法找尋答案去解決問題，勇於表達、擅長互動</br>在系上有許多實作的機會，需要有創意</br>隨時迸發新想法而為了讓每個作品更趨近完美，懂得接納不同意見，並樂於接受新資訊，以此提高作品水準。</p>
+	</div>
+
+	<div class="intro3">
+		<p>在大學期間參加了志工性社團</br>在社團裡學習到了如何籌辦活動、撰寫企劃、簡報宣傳以及良好的交際能力的重要性。</br>在擔任桃園電影節志工的場務組以及打工的過程中，學到了許多平常學不到的東西</br>不僅能提升口語表達的能力，也更加了解在各種問題中該如何靈機應變也學會和不同個性的人一起工作學習。</br></br>最重要的是，將熱情與專業的服務帶給民眾。除了學校的課內學習，我還有主動積極地去報名</br>參與競賽，挑戰自我、累積實力</br>在過程中學習到團隊合作以及自我負責的重要性，提升自我能力，必須把自己所負責的部分以及有興趣的事務做到最好，這樣才不會為團隊造成困擾，無論遇到什麼樣的困難都會想盡辦法努力一起克服逆境達成目標。</p>
+	</div>
+	
+</div>
+
+</body>
+</html>

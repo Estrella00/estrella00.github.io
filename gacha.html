@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<link rel="stylesheet" href="css/style.css"   type="text/css">
+	<title>種之森扭蛋店</title>
+	<meta charset="utf-8">
+</head>
+
+<style>
+
+	*{
+		font-family: "微軟正黑體";
+	}	
+	body
+	{
+		background-color:rgb(56, 63, 83);
+	}
+
+	.img_logo
+	{
+		width: 170px;
+		margin: 20px;
+		
+	}
+	.main
+	{
+		
+		background-color:rgb(56, 63, 83);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+
+    .idea
+    {
+    	background-color:#f1f5f5;
+    	border-radius: 50px;
+		padding: 10px;
+		text-align: center;
+		width:65%;
+		margin: 50px;
+		color: rgb(52, 53, 53);
+		border: 5px solid rgb(196, 190, 190);
+    }
+    .idea p
+    {
+		font-size: 20px;
+		line-height:30px;
+    }
+    .idea h2
+    {
+    	font-size: 24px;
+    
+    }
+	
+    .show
+    {
+    	background-color:  #f1f5f5;
+    	border-radius: 50px;
+    	padding: 20px;
+		width: 60%;
+		margin: 30px;
+		text-align: center;
+    	border: 5px solid rgb(196, 190, 190);
+
+    }
+    .show2
+    {
+    	background-color:#f1f5f5;
+    	border-radius: 50px;
+    	padding: 20px;
+		width: 60%;
+		margin: 30px;
+		text-align: center;
+		border: 5px solid rgb(196, 190, 190);
+    }
+	.show_img
+	{
+		width: 700px;
+		opacity: 0.85;
+	}
+
+	.show_img:hover
+	{
+		width: 700px;
+		opacity: 1;
+	}
+
+	.show a:hover
+	{
+		cursor: pointer;
+	}
+	.mark
+	{
+		position: absolute; 
+		top:75%;
+		left:10%;
+		height: 200px;
+
+	}
+	.v
+	{
+		width: 90%;
+		margin-bottom: 20px;
+	}
+	.show h2
+	{
+		color: rgb(52, 53, 53);
+		margin-bottom: 50px;
+	}
+
+
+	@media only screen and (min-width: 321px) and (max-width: 768px) 
+{
+	.show h2
+	{
+		font-size: 18px;
+	}
+	
+	.idea p
+    {
+		font-size: 16px;
+    }
+    .idea h2
+    {
+    	font-size: 18px;
+    
+	}
+	
+	.mark
+	{
+		position: absolute; 
+		top:75%;
+		left:8%;
+		height: 160px;
+
+	}
+	
+}
+
+
+	</style>
+
+<body>
+
+<nav style="background-color:rgb(56, 63, 83)">
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<img class="fas fa-bars" src="image/check.png" >
+			<!-- <i class="fas fa-bars"></i> -->
+		</label>
+		<a href="index.html"><img class="img_logo" src="image/logo.png"></a>
+	    <ul>
+			<li><a href="about.html">關於我</a></li>
+			<li><a href="works.html">作品</a></li>
+			<li><a href="photos.html">攝影</a></li>
+		</ul>
+</nav>
+
+
+
+
+<div class="main">
+	<div class="idea">
+		<h2>介紹</h2>
+		<p>這是課程的期末小專題，因為我很喜歡扭蛋，決定做一個與扭蛋有關的購物平台。</br>網頁可以查詢關鍵字、價錢區間、扭蛋分類，讓消費者可以夠更簡單搜尋到他們要的產品。</br>購物車可以加入、移除以及結帳。</p>
+		<h2>技術</h2>
+		<p>PHP、MySQL、JavaScript、HTML&CSS
+			</p>
+	</div>
+
+	<div class="show">
+		<h2>操作影片</h2>
+		<video class="v" controls>
+			<source src="videos/video1.mp4" type="video/mp4">
+		  </video>
+
+	</div>
+
+</div>
+
+</body>
+</html>

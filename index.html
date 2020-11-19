@@ -1,60 +1,92 @@
-<!doctype html>
-<html id="page_bigVideo" lang="ja-jp">
+<!DOCTYPE html>
+<html>
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ineffable Spazio</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700">
-<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="js/bigVideo-js/css/bigvideo.css">
-<link rel="stylesheet" href="css/style.css">
+	<title>洪宛鈴 Estrella</title>
+	<link rel="stylesheet" href="css/style.css"   type="text/css">
+	<meta charset="utf-8">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
+<style>
 
+	*{
+		margin: 0 auto;
+		font-family: "微軟正黑體";
+		/*text-align: center;*/
+	}
+	body
+	{
+		background-color:rgb(29, 35, 53);
+	}
+
+	.img_logo
+	{
+		width: 170px;
+		margin: 20px;
+		
+	}
+	.img_me
+	{
+		width: 270px;
+		margin: 10px;
+	}
+	.area1
+	{
+		background-color: rgb(29, 35, 53);
+		text-align: center;
+	}
+	.mainword
+	{
+		
+		width: 680px;
+		padding: 10px;
+		color: white;
+		line-height: 30px;
+		padding: 30px;
+	}
+
+	@media only screen and (min-width: 321px) and (max-width: 768px) 
+{
+	.mainword
+	{
+	
+		width: 550px;
+		
+	}
+}
+</style>
 
 <body>
-<div id="wrapper">
-<!--<video id="videoContainer_mobile" controls poster="movie/time_lapse.png" src="movie/time_lapse.webm"></video>
---><header id="headerContainer">
-<div class="inner">
-<h1 id="siteID"> Ineffable Spazio <span class="small"></span></h1>
-<nav id="navigation">
-<ul >
-<li><a href="index.html">Home</a></li>
-<li><a href="technology.html">Technology</a></li>
-<li><a href="project.html">Project</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
+
+<nav style="background-color: rgb(29, 35, 53)">
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<img class="fas fa-bars" src="image/check.png" >
+			<!-- <i class="fas fa-bars"></i> -->
+		</label>
+		<a href="index.html"><img class="img_logo" src="image/logo.png"></a>
+	    <ul>
+			<li><a href="about.html">關於我</a></li>
+			<li><a href="works.html">作品</a></li>
+			<li><a href="photos.html">攝影</a></li>
+		</ul>
 </nav>
+
+
+
+<div class="area1">
+
+	<img class="img_me"src="image/me.png">
+    <!-- 滑鼠移過去 圖片換<img src="image/me.png" onmouseover="this.src='image/logo.png';" onmouseout="this.src=' image/me.png ';" width="圖寬度"> -->
+    <p class="mainword">
+		您好，我是洪宛鈴，來自桃園</br>喜歡寫網頁程式，用不同的軟體製作專案網頁，讓漂亮的設計呈現在網頁上，我覺得非常有趣，平常喜歡攝影記錄生活中的美好風景</br>我的個性沉穩、外向、努力，態度積極主動責任心強、反應力快，有獨立學習的能力並具有團隊溝通、合作的能力。
+由於學的東西很廣泛，因此我認為自主學習非常重要，自己要想辦法找尋答案去解決問題，勇於表達、擅長互動，在系上有許多實作的機會，需要有創意，隨時有新想法。而為了讓每個作品更趨近完美，需懂得接納不同意見，並樂於接受新資訊。
+
+    </p>
+	
 </div>
-</header>
-<!--/headerContainer -->
-
-<div id="main">
-<h2>關於喜識國際</h2>
-<p>亞洲的空間科技領導廠商，藉由科技數位技術改善既有的建築與室內設計思維，提升設計效率、減少溝通成本，進而讓採購與建材使用管理最佳優化，達到環境與經濟的平衡。</p>
-<p>Ineffable Spazio is the technology of space pioneer in Asia. We transfer tranditional design industry to more digital and efficiency.<p>
-<p class="btn"><a href=""_blank">閱讀更多</a></p>
-</div>
-<!--/main -->
-
-<footer id="footerContainer">
-<div class="inner">
-<p id="copyright">Copyright&copy; Ineffable Spazio Co.,Ltd. All Rights Reserved.</p>
-</div>
-</footer>
-<!-- /footer -->
-
-</div>
-
-
-<!--/wrapper -->
-
-<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script> 
-<script src="js/bigVideo-js/js/video.js"></script>
-<script src="js/bigVideo-js/js/bigvideo.js"></script>
-<script src="js/script_bigvideo.js"></script>
-
 
 </body>
 </html>
