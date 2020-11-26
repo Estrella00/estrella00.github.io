@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<link rel="stylesheet" href="css/style2.css"   type="text/css">
+	<title>浣衣池</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<style>
+
+	*{
+		font-family: "微軟正黑體";
+	}	
+	body
+	{
+		background-color:rgb(69, 56, 83);
+	}
+
+	.img_logo
+	{
+		width: 170px;
+		margin: 20px;
+		
+	}
+	.main
+	{
+		
+		background-color: rgb(69, 56, 83);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+
+    .idea
+    {
+    	background-color:  #f1f5f5;
+    	border-radius: 50px;
+		padding: 10px;
+		text-align: center;
+		width:65%;
+		margin: 50px;
+		color: rgb(52, 53, 53);
+		border: 5px solid rgb(196, 190, 190);
+    }
+    .idea p
+    {
+		font-size: 20px;
+		line-height:30px;
+    }
+    .idea h2
+    {
+    	font-size: 24px;
+    
+    }
+	
+    .show
+    {
+    	background-color:  #f1f5f5;
+    	border-radius: 50px;
+    	padding: 20px;
+		width: 50%;
+		height: 50vh;
+		margin: 30px;
+		text-align: center;
+		border: 5px solid rgb(196, 190, 190);
+
+    }
+	.show2
+    {
+    	background-color:  #f1f5f5;
+    	border-radius: 50px;
+    	padding: 20px;
+		width: 60%;
+		margin: 30px;
+		text-align: center;
+		border: 5px solid rgb(196, 190, 190);
+
+    }
+  
+	.show_img
+	{
+		width: 100%;
+		height: 50vh;
+		/* opacity: 0.85; */
+	}
+
+	.show_img2
+	{
+		width: 70%;
+		/* opacity: 0.85; */
+	}
+
+		
+	.mark
+	{
+		position: absolute; 
+		top:75%;
+		left:10%;
+		height: 200px;
+
+	}
+
+	.v
+	{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	@media only screen and (min-width: 321px) and (max-width: 768px) 
+{
+	.show_img2
+	{
+		width: 90%;
+		/* opacity: 0.85; */
+	}
+
+	.img_logo
+	{
+		width: 120px;
+		margin: 20px;
+		
+	}
+	.idea p
+    {
+		font-size: 16px;
+    }
+    .idea h2
+    {
+    	font-size: 18px;
+    
+	}
+	
+	.mark
+	{
+		position: absolute; 
+		top:75%;
+		left:8%;
+		height: 160px;
+
+	}
+}
+
+
+	</style>
+
+<body>
+
+<nav style="background-color:  rgb(69, 56, 83)">
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<img class="fas fa-bars" src="image/check.png" >
+			<!-- <i class="fas fa-bars"></i> -->
+		</label>
+		<a href="index.html"><img class="img_logo" src="image/logo.png"></a>
+	    <ul>
+			<li><a href="about.html">關於我</a></li>
+			<li><a href="works.html">作品</a></li>
+			<li><a href="photos.html">攝影</a></li>
+		</ul>
+</nav>
+
+
+
+<div class="main">
+	<h1 style="color:rgb(236, 236, 236) ; font-size: 25px; margin-top: 50px;">浣衣池</h1>
+	<h1 style="color:#da9643 ; font-size: 25px;">文化廊道競賽 - 獲得第三名</h1>
+	<div class="idea" style="width:55%;">
+		<h2>探究緣由</h2>
+		<p>由於我從小到大就在浣衣池旁邊長大，但隨著年紀的增長，就沒有那麼時常去了，每年觀察下來，浣衣池的水量一年比一年稀少。</br></br>但不希望這個那麼有文化歷史的地方被大家遺忘。因為這是屬於霄裡人的寶物資產，也是桃園的重要文化，非常值得我們去探究。</p>
+	<!-- <h2>技術</h2>
+		<p>Arduino、霍爾感測器、光敏電阻、led燈、燈條、升壓器、微動開關</p> -->
+	</div>
+
+
+	<div class="show" >
+		<iframe class="show_img" src="https://www.youtube.com/embed/XtldiTEXLzM" 
+		frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+		allowfullscreen></iframe>	
+	</div>
+
+	<div class="show2" >
+		<img class="show_img2" src="image/pool_show.png" >
+	</div>
+
+
+
+	
+
+	
+
+
+</div>
+
+</body>
+</html>
